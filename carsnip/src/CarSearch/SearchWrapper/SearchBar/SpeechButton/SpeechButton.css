@@ -16,3 +16,20 @@
     border-image: initial;
     -webkit-appearance: button;
 }
+
+.SpeechButton svg {
+    text-size-adjust: 100%;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    text-transform: none;
+    box-sizing: inherit;
+    cursor: pointer;
+    width: auto;
+    height: 1.4375rem;
+    padding-left: 0.4375rem;
+    padding-right: 0.4375rem;
+    margin-top: 0.25rem;
+    animation: 0s ease 0s 1 normal none running none;
+    overflow: hidden;
+}
