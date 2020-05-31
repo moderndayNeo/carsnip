@@ -1,6 +1,4 @@
 .Scroller {
-    /* display: flex;
-    flex-direction: row; */
     line-height: 1.15;
     text-size-adjust: 100%;
     color: rgb(103, 106, 108);
@@ -14,6 +12,7 @@
     transform: translate3d(0px, 0px, 0px);
     left: calc(((50% - 61.5rem) - 30.75rem) - 5.125rem);
     transition: left 1s ease 0s;
+    overflow: hidden;
 }
 
 .Scroller .Car {
@@ -33,8 +32,8 @@
     transition: opacity 500ms ease 0s;
 }
 
+
 .Scroller .Car img {
-    /* display: none; */
     line-height: 1.15;
     text-size-adjust: 100%;
     color: rgb(103, 106, 108);

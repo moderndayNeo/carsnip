@@ -6,7 +6,12 @@ import CarSearch from './CarSearch/CarSearch'
 function App() {
   return (
     <div className="App">
+      <div>
+        <div>
       <Header />
+
+        </div>
+      </div>
       <CarSearch />
     </div>
   );

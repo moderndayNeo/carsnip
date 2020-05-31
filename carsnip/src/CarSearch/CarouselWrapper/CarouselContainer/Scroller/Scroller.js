@@ -16,7 +16,7 @@ export default function Scroller() {
 
     return (
         <div className="Scroller">
-            {/* <img src={request_img} alt=""/> */}
+            <img src={request_img} alt=""/>
             <div className="Car">
                 <img
                     alt="Land Rover Discovery"
