@@ -1,7 +1,4 @@
 .MenuButton {
-    height: 34px;
-    width: 30px;
-    background-color: #ffffff;
     line-height: 1.15;
     text-size-adjust: 100%;
     color: rgb(103, 106, 108);
@@ -20,4 +17,5 @@
     border-style: solid;
     border-color: rgb(213, 213, 213);
     border-image: initial;
+
 }
