@@ -1,3 +1,18 @@
 .SpeechButton {
-    
+    text-size-adjust: 100%;
+    box-sizing: inherit;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px;
+    overflow: visible;
+    text-transform: none;
+    position: absolute;
+    height: 100%;
+    background: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    -webkit-appearance: button;
 }

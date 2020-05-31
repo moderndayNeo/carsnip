@@ -1,27 +1,8 @@
 .CarsnipLogo {
     height: 50px;
-    position: absolute;
     top: 100px;   
 }
 
 .CarsnipLogo g {
     height: 20px;
 }
-
-
-    /*
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    x: 0px;
-    y: 0px;
-    box-sizing: inherit;
-    width: 9.4375rem;
-    height: 1.9375rem;
-    animation: 1s ease 0s 1 normal none running ldXWMK;
-    overflow: hidden;
-}
-*/
