@@ -1,3 +1,12 @@
 .SearchWrapper {
-    
+    line-height: 1.15;
+text-size-adjust: 100%;
+color: rgb(103, 106, 108);
+font-family: Roboto, helvetica, arial, sans-serif;
+font-size: 16px;
+text-align: center;
+box-sizing: inherit;
+width: 18.125rem;
+border-radius: 0.625rem;
+margin: 1.5625rem auto 0px;
 }
