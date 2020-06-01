@@ -8,8 +8,7 @@ export default function DescriptionWrapper() {
         <div className="DescriptionWrapper">
              <DescriptionWrapperTitle />
              <Description />
-
-                             
+                            
         </div>
     )
 }
