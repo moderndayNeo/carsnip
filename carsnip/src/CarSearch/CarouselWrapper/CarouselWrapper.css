@@ -1,10 +1,6 @@
 .CarouselWrapper {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: inherit;
     overflow: hidden;
+    border: 1px solid purple;
+    max-width: 100%;
+    margin-bottom: 35px;
 }

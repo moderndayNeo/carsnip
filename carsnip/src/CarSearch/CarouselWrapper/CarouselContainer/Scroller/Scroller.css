@@ -1,11 +1,4 @@
 .Scroller {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: inherit;
     /* position: absolute; */
     /* top: 0px; */
     display: flex;
@@ -13,18 +6,10 @@
     left: calc(((50% - 61.5rem) - 30.75rem) - 5.125rem);
     transition: left 1s ease 0s;
     /* overflow: hidden; */
-    width: 100vw;
     /* border-bottom: 0.0625rem solid rgb(228, 228, 228); */
 }
 
 .Scroller .Car {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: inherit;
     width: 9rem;
     height: 5.3125rem;
     position: relative;
@@ -34,15 +19,7 @@
     transition: opacity 500ms ease 0s;
 }
 
-
 .Scroller .Car img {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: inherit;
     border-style: none;
     width: 100%;
     height: 100%;

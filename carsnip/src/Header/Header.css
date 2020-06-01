@@ -1,10 +1,4 @@
 .Header {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-size: 16px;
-    box-sizing: inherit;
     flex-shrink: 0;
     /* height: 3.125rem; */
     height: 28px;

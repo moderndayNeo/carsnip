@@ -1,15 +1,10 @@
 .Cards {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-size: 16px;
-    box-sizing: inherit;
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: center;
     justify-content: center;
     max-width: 76rem;
+    width: 339px;
     margin-left: auto;
     margin-right: auto;
 }
