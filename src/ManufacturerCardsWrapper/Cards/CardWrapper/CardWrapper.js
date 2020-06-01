@@ -2,7 +2,6 @@ import React from 'react'
 import './CardWrapper.css'
 
 export default function CardWrapper({ href, src, cardName, cardCount }) {
-    const mytext = 'Audi'
 
     return (
         <a href={`/used-cars/by/${cardName}`} className="CardWrapper">
