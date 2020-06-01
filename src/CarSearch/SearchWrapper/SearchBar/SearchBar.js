@@ -7,11 +7,9 @@ import SearchButton from './SearchButton/SearchButton'
 export default function SearchBar() {
     return (
         <form role="search" method="get" action="/search" className="SearchBar">
-   
             <SpeechButton />
             <SearchBox />
             <SearchButton />
- <p>test</p>
         </form>
     )
 }
