@@ -4,4 +4,5 @@
     align-items: center;
     /* justify-content: space-between; */
     margin-top: 73px;
+    border-bottom: 0.0625rem solid rgb(228, 228, 228);
 }

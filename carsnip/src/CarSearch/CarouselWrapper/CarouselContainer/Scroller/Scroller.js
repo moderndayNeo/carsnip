@@ -21,8 +21,8 @@ export default function Scroller() {
 
     return (
         <div className="Scroller">
-            <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
             <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
+            <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
             <Car alt="BMW X4" src={bmwX4Img} />
             <Car alt="Renault Clio" src={renaultClioImg} />
             <Car alt="Ford Fiesta" src={fordFiestaImg} />

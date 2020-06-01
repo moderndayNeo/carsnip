@@ -13,6 +13,7 @@
     left: calc(((50% - 61.5rem) - 30.75rem) - 5.125rem);
     transition: left 1s ease 0s;
     overflow: hidden;
+    width: 100vw;
 }
 
 .Scroller .Car {
