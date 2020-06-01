@@ -35,3 +35,13 @@
     box-sizing: inherit;
     fill: rgb(255, 255, 255);
 }
+
+.SocialLink .svg-outline {
+
+line-height: 1.15;
+text-size-adjust: 100%;
+font-family: Roboto, helvetica, arial, sans-serif;
+font-size: 16px;
+box-sizing: inherit;
+fill: rgb(112, 116, 122);
+}

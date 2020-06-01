@@ -12,7 +12,10 @@ export default function SocialLink({ href1, title1, path1, path2, path3 }) {
         >
             <svg viewBox="0 0 52 28">
                 <g>
-                    <path d={path1} />
+                    <path
+                        d={path1}
+                        className="svg-outline"
+                    />
                 </g>
                 <g>
                     <path d={path2} />
