@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import CarSearch from './CarSearch/CarSearch'
 import ManufacturerCardsWrapper from './ManufacturerCardsWrapper/ManufacturerCardsWrapper'
 import ManufacturerListWrapper from './ManufacturerListWrapper/ManufacturerListWrapper'
+import Main from './Main/Main'
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <CarSearch />
             <ManufacturerCardsWrapper />
             <ManufacturerListWrapper />
+            <Main />
         </div>
     )
 }
