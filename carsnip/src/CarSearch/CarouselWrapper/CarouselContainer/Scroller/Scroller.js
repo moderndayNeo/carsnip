@@ -1,46 +1,41 @@
 import React, { useEffect, useState } from 'react'
 import './Scroller.css'
+import Car from './Car/Car'
+import {
+    landRoverDiscoveryImg,
+    fordFiestaImg,
+    jaguarXkConvertibleImg,
+    renaultClioImg,
+    vwGolfImg,
+    bmwX4Img
+} from '../../../../Media/Images/scroller-car-images'
 
 export default function Scroller() {
-    const [img, setimg] = useState('')
 
-    const request_img =
-        'https://www.carsnip.com/images/home/land_rover_discovery.jpg'
-
-    useEffect(() => {
-        ;(async () => {
-            const img = await request_img
-            setimg(img)
-        })()
-    }, [])
+    // useEffect(() => {
+    //     ;(async () => {
+    //         const img = await request_img
+    //         setimg(img)
+    //     })()
+    // }, [])
 
     return (
         <div className="Scroller">
-            <img src={request_img} alt=""/>
-            <div className="Car">
-                <img
-                    alt="Land Rover Discovery"
-                    src={request_img}
-                />
-            </div>
-            <div className="Car">
-                <img
-                    alt="Jaguar XK Convertible"
-                    src="/images/home/jaguar_xk.jpg"
-                />
-            </div>
-            <div className="Car">
-                <img alt="BMW X4" src="/images/home/bmw_x4.jpg" />
-            </div>
-            <div className="Car">
-                <img alt="Renault Clio" src="/images/home/renault_clio.jpg" />
-            </div>
-            <div className="Car">
-                <img alt="Ford Fiesta" src="/images/home/ford_fiesta.jpg" />
-            </div>
-            <div className="Car">
-                <img alt="Volkswagen Golf" src="/images/home/vw_golf.jpg" />
-            </div>
+            <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
+            <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
+            <Car alt="BMW X4" src={bmwX4Img} />
+            <Car alt="Renault Clio" src={renaultClioImg} />
+            <Car alt="Ford Fiesta" src={fordFiestaImg} />
+            <Car alt="Volkswagen Golf" src={vwGolfImg} />
+
+  
+        </div>
+    )
+}
+
+
+/*
+
             <div className="Car">
                 <div className="Tooltip-laco3z-0 dDzZNL">
                     Land Rover Discovery
@@ -247,6 +242,7 @@ export default function Scroller() {
                 <img alt="Ford Fiesta" src="/images/home/ford_fiesta.jpg" />
             </div>
             <div className="Car">
+
                 <div className="Tooltip-laco3z-0 dDzZNL">Volkswagen Golf</div>
                 <svg
                     viewBox="0 0 25.9 25.9"
@@ -285,30 +281,4 @@ export default function Scroller() {
                 </svg>
                 <img alt="Volkswagen Golf" src="/images/home/vw_golf.jpg" />
             </div>
-            <div className="Car">
-                <img
-                    alt="Land Rover Discovery"
-                    src="/images/home/land_rover_discovery.jpg"
-                />
-            </div>
-            <div className="Car">
-                <img
-                    alt="Jaguar XK Convertible"
-                    src="/images/home/jaguar_xk.jpg"
-                />
-            </div>
-            <div className="Car">
-                <img alt="BMW X4" src="/images/home/bmw_x4.jpg" />
-            </div>
-            <div className="Car">
-                <img alt="Renault Clio" src="/images/home/renault_clio.jpg" />
-            </div>
-            <div className="Car">
-                <img alt="Ford Fiesta" src="/images/home/ford_fiesta.jpg" />
-            </div>
-            <div className="Car">
-                <img alt="Volkswagen Golf" src="/images/home/vw_golf.jpg" />
-            </div>
-        </div>
-    )
-}
+*/
