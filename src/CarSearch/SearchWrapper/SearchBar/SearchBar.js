@@ -11,7 +11,7 @@ export default function SearchBar() {
             <SpeechButton />
             <SearchBox />
             <SearchButton />
- 
+ <p>test</p>
         </form>
     )
 }
