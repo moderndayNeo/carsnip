@@ -1,12 +1,14 @@
 import React from 'react'
 import './CardWrapper.css'
 
-export default function CardWrapper({ href, src, CardName, cardCount }) {
+export default function CardWrapper({ href, src, cardName, cardCount }) {
+    const mytext = 'Audi'
+
     return (
-        <a href={`/used-cars/by/${CardName}`} className="CardWrapper">
-            <img src={src} alt={CardName} />
-            <p className="CardName">{CardName}</p>
-            <span className="CardCounter">{cardCount}</span>
+        <a href={`/used-cars/by/${cardName}`} className="CardWrapper">
+            <img src={src} alt={cardName} />
+            <p className="cardName">{cardName}</p>
+            <span className="CardCounter">({cardCount})</span>
         </a>
     )
 }

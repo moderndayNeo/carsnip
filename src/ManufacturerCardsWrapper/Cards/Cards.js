@@ -21,14 +21,14 @@ export default function Cards() {
         <div className="Cards">
             <CardWrapper
                 src={audiLogo}
-                cardName={'Audi'}
+                cardName='Audi'
                 cardCount={'44,686'}
             />
             <CardWrapper src={bmwLogo} cardName={'BMW'} cardCount={'34,863'} />
 
             <CardWrapper
                 src={fordLogo}
-                cardName={'Ford'}
+                cardName='Ford'
                 cardCount={'57,394'}
             />
             <CardWrapper
