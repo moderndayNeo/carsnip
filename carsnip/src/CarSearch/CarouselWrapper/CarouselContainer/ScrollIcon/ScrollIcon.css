@@ -9,6 +9,8 @@
     width: 2.0625rem;
     height: 2.0625rem;
     background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -23px;
     margin-top: 50px;
     left: 50%;
     transform: translateX(-50%);

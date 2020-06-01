@@ -12,8 +12,9 @@
     transform: translate3d(0px, 0px, 0px);
     left: calc(((50% - 61.5rem) - 30.75rem) - 5.125rem);
     transition: left 1s ease 0s;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100vw;
+    /* border-bottom: 0.0625rem solid rgb(228, 228, 228); */
 }
 
 .Scroller .Car {
