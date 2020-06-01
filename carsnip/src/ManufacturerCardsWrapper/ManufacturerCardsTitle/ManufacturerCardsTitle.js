@@ -3,8 +3,8 @@ import './ManufacturerCardsTitle.css'
 
 export default function ManufacturerCardsTitle() {
     return (
-        <div className="ManufacturerCardsTitle">
-            
-        </div>
+        <h3 className="ManufacturerCardsTitle">
+         Popular car brands
+        </h3>
     )
 }
