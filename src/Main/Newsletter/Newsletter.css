@@ -1,3 +1,25 @@
 .Newsletter {
-    
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    color: rgb(103, 106, 108);
+    font-family: Roboto, helvetica, arial, sans-serif;
+    font-size: 16px;
+    box-sizing: inherit;
+    display: block;
+    padding: 2.1875rem 0px 2.5rem;
+}
+
+.Newsletter .Social {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    color: rgb(103, 106, 108);
+    font-family: Roboto, helvetica, arial, sans-serif;
+    font-size: 16px;
+    box-sizing: inherit;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    max-width: 17.75rem;
+    width: 100%;
+    margin: 0px auto;
 }
