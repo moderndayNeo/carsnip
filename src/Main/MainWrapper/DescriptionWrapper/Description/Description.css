@@ -1,0 +1,19 @@
+.Description {
+    margin: 0px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: rgb(229, 229, 229);
+    margin-top: 0.9375rem;
+}
+
+.Description a {
+    text-size-adjust: 100%;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    box-sizing: inherit;
+    background-color: transparent;
+    color: rgb(229, 229, 229);
+    text-decoration: none;
+}
