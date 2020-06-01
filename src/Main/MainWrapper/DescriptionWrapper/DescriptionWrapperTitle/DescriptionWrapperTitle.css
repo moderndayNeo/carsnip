@@ -1,0 +1,15 @@
+.DescriptionWrapperTitle {
+    background-color: transparent;
+}
+
+.DescriptionWrapperTitle svg {
+    width: 7.5rem;
+    height: 1.25rem;
+    overflow: hidden;
+}
+
+.DescriptionWrapperTitle svg g {
+}
+.DescriptionWrapperTitle svg g path {
+    fill: #ff6000;
+}

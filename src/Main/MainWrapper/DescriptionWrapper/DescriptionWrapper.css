@@ -1,3 +1,6 @@
 .DescriptionWrapper {
-    
+    display: block;
+    text-align: center;
+    max-width: 28.75rem;
+    margin: 0px auto 1.875rem;
 }
