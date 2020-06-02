@@ -8,3 +8,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (min-width: 888px) {
+    .Cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* width: 500px; */
+    }
+}

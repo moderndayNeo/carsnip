@@ -33,3 +33,24 @@
     color: rgb(153, 157, 163);
     margin-left: 0.3125rem;
 }
+
+@media (min-width: 888px) {
+    .CardWrapper {
+        background-color: transparent;
+        height: 10.125rem;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0.875rem 0px;
+        text-align: center;
+        font-weight: 300;
+        flex: 0 0 16.5rem;
+        padding: 0.625rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(239, 240, 241);
+        border-image: initial;
+        text-decoration: none;
+        margin-bottom: 1.25rem;
+        width: 264px;
+    }
+}

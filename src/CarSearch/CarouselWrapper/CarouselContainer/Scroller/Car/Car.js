@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Car.css'
 
 export default function Car({ alt, src }) {
     const [centered, setCentered] = useState(false)
+    
+    useEffect(() => {
+        setCentered(false)
+    }, [centered])
+
     return (
         <div className="Car">
             {centered && (
