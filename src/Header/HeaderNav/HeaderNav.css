@@ -7,7 +7,7 @@
     box-sizing: inherit;
     margin-left: auto;
     padding: 0.5625rem 0px;
-    display: block;
+    display: none;
 }
 
 .HeaderNav ul {
@@ -21,4 +21,10 @@
     white-space: nowrap;
     margin: 0px;
     padding: 0px;
+}
+
+@media (min-width: 1024px) {
+    .HeaderNav {
+        display: block;
+    }
 }

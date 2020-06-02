@@ -12,3 +12,9 @@
     border-color: rgb(213, 213, 213);
     border-image: initial;
 }
+
+@media (min-width: 1024px) {
+    .MenuButton {
+        display: none;
+    }
+}
