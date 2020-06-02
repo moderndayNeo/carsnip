@@ -15,15 +15,14 @@ export default function SearchButton() {
                             r="37.8"
                             className="circle"
                         ></circle>
-                        <g
-                            id="XMLID_1_"
-                            className="line"
-                        >
+                        <g id="XMLID_1_" className="line">
                             <path d="M2.9,67.8c-2.9,2.9-7.8,2.8-11-0.4l-18.9-18.9c-3.1-3.1-3.3-8-0.4-11s7.8-2.8,11,0.4L2.6,56.9 C5.7,60,5.8,64.9,2.9,67.8z"></path>
                         </g>
                     </svg>
                 </span>
+                <span className="Text">Search</span>
             </span>
         </button>
     )
 }
+

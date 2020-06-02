@@ -17,3 +17,26 @@
     border-image: initial;
     border-radius: 0.1875rem;
 }
+
+@media (min-width: 1024px) {
+    .SearchBox {
+        text-size-adjust: 100%;
+        box-sizing: inherit;
+        font-family: sans-serif;
+        line-height: 1.15;
+        margin: 0px;
+        overflow: visible;
+        padding-left: 2.5rem;
+        padding-right: 2.25rem;
+        display: block;
+        width: 100%;
+        color: rgb(99, 99, 99);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(210, 210, 210);
+        border-image: initial;
+        border-radius: 0.1875rem;
+        height: 4rem;
+        font-size: 1.125rem;
+    }
+}

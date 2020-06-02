@@ -11,3 +11,10 @@
     display: flex;
     animation: 1s ease 0s 1 normal none running ldXWMK;
 }
+
+@media (min-width: 768px) {
+    .SearchBar {
+        /* width: 610px; */
+    }
+}
+

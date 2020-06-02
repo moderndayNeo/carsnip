@@ -6,3 +6,9 @@
     border-radius: 0.625rem;
     margin: 1.5625rem auto 0px;
 }
+
+@media (min-width: 770px) {
+    .SearchWrapper {
+        width: 610px;
+    }
+}
