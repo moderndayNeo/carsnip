@@ -1,0 +1,38 @@
+.ImportantInfo {
+}
+
+.ImportantInfo .InfoHeader {
+    text-size-adjust: 100%;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    box-sizing: inherit;
+    margin: 0px;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 300;
+    padding-bottom: 0.75rem;
+}
+
+.ImportantInfo .Text {
+    text-size-adjust: 100%;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    box-sizing: inherit;
+    margin: 0px;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 300;
+    opacity: 0.6;
+    padding-bottom: 0.75rem;
+}
+
+.ImportantInfo .Text a {
+    text-size-adjust: 100%;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 300;
+    box-sizing: inherit;
+    background-color: transparent;
+    color: white;
+}

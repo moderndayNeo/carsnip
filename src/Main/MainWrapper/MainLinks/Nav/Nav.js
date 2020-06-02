@@ -15,7 +15,7 @@ export default function Nav({
     href4,
     title4,
     text4,
-    text5
+    text5,
 }) {
     return (
         <div className="Nav">
@@ -39,9 +39,7 @@ export default function Nav({
                 <li className="Item">
                     <a href={href4} title={title4}>
                         {text4}
-                        <span className="Highlight">
-                                {text5}
-                            </span>
+                        {text5 && <span className="Highlight">{text5}</span>}
                     </a>
                 </li>
             </ul>

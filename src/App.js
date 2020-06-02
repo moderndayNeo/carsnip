@@ -5,6 +5,7 @@ import CarSearch from './CarSearch/CarSearch'
 import ManufacturerCardsWrapper from './ManufacturerCardsWrapper/ManufacturerCardsWrapper'
 import ManufacturerListWrapper from './ManufacturerListWrapper/ManufacturerListWrapper'
 import Main from './Main/Main'
+import Copyright from './Copyright/Copyright'
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <ManufacturerCardsWrapper />
             <ManufacturerListWrapper />
             <Main />
+            <Copyright />
         </div>
     )
 }

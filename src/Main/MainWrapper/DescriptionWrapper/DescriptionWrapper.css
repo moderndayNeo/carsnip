@@ -1,6 +1,12 @@
 .DescriptionWrapper {
-    display: block;
+    display: none;
     text-align: center;
     max-width: 28.75rem;
     margin: 0px auto 1.875rem;
+}
+
+@media (min-width: 1020px) {
+    .DescriptionWrapper {
+        display: block;
+    }
 }
