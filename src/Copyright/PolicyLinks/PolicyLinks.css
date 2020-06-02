@@ -2,7 +2,7 @@
     line-height: 1.15;
     text-size-adjust: 100%;
     color: rgb(103, 106, 108);
-    font-family: Roboto, helvetica, arial, sans-serif;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
     font-size: 16px;
     text-align: center;
     box-sizing: inherit;
@@ -15,7 +15,7 @@
 .PolicyLinks .PolicyLink {
     line-height: 1.15;
     text-size-adjust: 100%;
-    font-family: Roboto, helvetica, arial, sans-serif;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
     list-style-type: none;
     box-sizing: inherit;
     display: inline;
@@ -27,7 +27,7 @@
 .PolicyLinks .PolicyLink a {
     line-height: 1.15;
     text-size-adjust: 100%;
-    font-family: Roboto, helvetica, arial, sans-serif;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
     list-style-type: none;
     font-size: 0.875rem;
     font-weight: 300;

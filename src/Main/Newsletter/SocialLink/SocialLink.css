@@ -1,7 +1,7 @@
 .SocialLink {
     line-height: 1.15;
     text-size-adjust: 100%;
-    font-family: Roboto, helvetica, arial, sans-serif;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
     font-size: 16px;
     box-sizing: inherit;
     background-color: transparent;
@@ -11,7 +11,7 @@
 .SocialLink svg {
     line-height: 1.15;
     text-size-adjust: 100%;
-    font-family: Roboto, helvetica, arial, sans-serif;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
     font-size: 16px;
     box-sizing: inherit;
     width: 3.6875rem;
@@ -22,7 +22,7 @@
 .SocialLink svg g {
     line-height: 1.15;
     text-size-adjust: 100%;
-    font-family: Roboto, helvetica, arial, sans-serif;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
     font-size: 16px;
     box-sizing: inherit;
 }
@@ -30,7 +30,7 @@
 .SocialLink svg g path {
     line-height: 1.15;
     text-size-adjust: 100%;
-    font-family: Roboto, helvetica, arial, sans-serif;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
     font-size: 16px;
     box-sizing: inherit;
     fill: rgb(255, 255, 255);
@@ -40,7 +40,7 @@
 
 line-height: 1.15;
 text-size-adjust: 100%;
-font-family: Roboto, helvetica, arial, sans-serif;
+font-family: 'Roboto', helvetica, arial, sans-serif;
 font-size: 16px;
 box-sizing: inherit;
 fill: rgb(112, 116, 122);
