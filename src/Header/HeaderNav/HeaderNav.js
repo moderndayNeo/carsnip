@@ -1,0 +1,16 @@
+import React from 'react'
+import NavLink from './NavLink/NavLink'
+import './HeaderNav.css'
+
+export default function HeaderNav() {
+    return (
+        <nav className="HeaderNav">
+            <ul>
+                <NavLink href="/used-cars" text="Used Cars" />
+                <NavLink href="/value-my-car" text="Value My Car" />
+                <NavLink href="/about/" text="About" />
+                <NavLink href="/dealers/" text=" Dealers" />
+            </ul>
+        </nav>
+    )
+}

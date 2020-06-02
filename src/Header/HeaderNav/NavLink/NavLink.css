@@ -1,0 +1,27 @@
+.NavLink {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    color: rgb(103, 106, 108);
+    font-family: Roboto, helvetica, arial, sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    white-space: nowrap;
+    box-sizing: inherit;
+    margin-right: 1.1875rem;
+    display: inline;
+}
+
+.NavLink a {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    list-style-type: none;
+    white-space: nowrap;
+    box-sizing: inherit;
+    background-color: transparent;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    color: rgb(100, 105, 114);
+    text-transform: uppercase;
+    text-decoration: none;
+}
