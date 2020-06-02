@@ -3,3 +3,9 @@
     max-width: 100%;
     margin-bottom: 35px;
 }
+
+@media (min-width: 1024px) {
+    .CarouselWrapper {
+        margin-top: 70px;
+    }
+}

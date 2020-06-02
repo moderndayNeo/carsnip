@@ -1,3 +1,47 @@
 .Car {
-    
+    width: 9rem;
+    height: 5.3125rem;
+    position: relative;
+    opacity: 0.3;
+    flex: 0 0 9rem;
+    margin: 0px 0.625rem;
+    transition: opacity 500ms ease 0s;
+}
+
+.Car img {
+    border-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 1024px) {
+    .Car {
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        color: rgb(103, 106, 108);
+        font-family: Roboto, helvetica, arial, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        box-sizing: inherit;
+        position: relative;
+        opacity: 0.3;
+        transition: opacity 500ms ease 0s;
+        width: 18.0625rem;
+        height: 10.625rem;
+        flex: 0 0 18.0625rem;
+        margin: 0px 0.9375rem;
+    }
+
+    .Car img {
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        color: rgb(103, 106, 108);
+        font-family: Roboto, helvetica, arial, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        box-sizing: inherit;
+        border-style: none;
+        width: 100%;
+        height: 100%;
+    }
 }

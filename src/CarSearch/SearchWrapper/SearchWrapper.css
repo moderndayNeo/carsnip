@@ -12,3 +12,12 @@
         width: 610px;
     }
 }
+
+@media (min-width: 1024px) {
+    .SearchWrapper {
+        border-radius: 0.625rem;
+        margin: 1.5625rem auto 0px;
+        width: 38.125rem;
+        margin-top: 2.8125rem;
+    }
+}

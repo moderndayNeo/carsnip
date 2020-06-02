@@ -10,8 +10,12 @@ import Copyright from './Copyright/Copyright'
 function App() {
     return (
         <div className="App">
+            <section className="top">
+
             <Header />
             <CarSearch />
+            </section>
+
             <ManufacturerCardsWrapper />
             <ManufacturerListWrapper />
             <Main />

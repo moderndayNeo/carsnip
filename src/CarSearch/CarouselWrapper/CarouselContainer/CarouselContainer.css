@@ -14,3 +14,9 @@
     overflow: hidden;
     /* max-width: 100%; */
 }
+
+@media (min-width: 1024px) {
+    .CarouselContainer {
+        height: 180px;
+    }
+}

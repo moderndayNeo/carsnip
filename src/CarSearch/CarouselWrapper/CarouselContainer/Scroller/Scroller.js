@@ -7,11 +7,10 @@ import {
     jaguarXkConvertibleImg,
     renaultClioImg,
     vwGolfImg,
-    bmwX4Img
+    bmwX4Img,
 } from '../../../../Media/Images/scroller-car-images'
 
 export default function Scroller() {
-
     // useEffect(() => {
     //     ;(async () => {
     //         const img = await request_img
@@ -27,12 +26,9 @@ export default function Scroller() {
             <Car alt="Renault Clio" src={renaultClioImg} />
             <Car alt="Ford Fiesta" src={fordFiestaImg} />
             <Car alt="Volkswagen Golf" src={vwGolfImg} />
-
-  
         </div>
     )
 }
-
 
 /*
 
