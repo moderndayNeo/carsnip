@@ -8,3 +8,16 @@
     padding-right: 0px;
     max-width: 69.75rem;
 }
+
+.Main .main-container {
+
+line-height: 1.15;
+text-size-adjust: 100%;
+color: rgb(103, 106, 108);
+font-family: Roboto, helvetica, arial, sans-serif;
+font-size: 16px;
+box-sizing: inherit;
+padding-left: 1.125rem;
+padding-right: 1.125rem;
+margin: 0px auto;
+}

@@ -1,16 +1,15 @@
 .App {
-  /* text-align: center; */
-  --carsnip-orange: rgb(255, 96, 0);
+    --carsnip-orange: rgb(255, 96, 0);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-  line-height: 1.15;
-  text-size-adjust: 100%;
-  color: rgb(103, 106, 108);
-  font-family: Roboto, helvetica, arial, sans-serif;
-  font-size: 16px;
-  box-sizing: inherit;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    color: rgb(103, 106, 108);
+    font-family: 'Roboto', helvetica, arial, sans-serif;
+    font-size: 16px;
+    box-sizing: inherit;
 }

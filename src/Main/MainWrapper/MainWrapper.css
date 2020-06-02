@@ -3,3 +3,15 @@
     padding: 3.125rem 0px 2.8125rem;
     display: flex;
 }
+
+.MainWrapper {
+line-height: 1.15;
+text-size-adjust: 100%;
+color: rgb(103, 106, 108);
+font-family: Roboto, helvetica, arial, sans-serif;
+font-size: 16px;
+box-sizing: inherit;
+display: block;
+padding-top: 1.875rem;
+border-bottom: 0.0625rem solid rgb(69, 75, 83);
+}
