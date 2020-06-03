@@ -2,18 +2,18 @@
     background: rgb(50, 56, 65);
 }
 
-.Main .main-container {
+/* .Main .main-container {
     margin: 0px auto;
     padding-left: 0px;
     padding-right: 0px;
     max-width: 69.75rem;
-}
+} */
 
-/* .Main .main-container {
+.Main .main-container {
     padding-left: 1.125rem;
     padding-right: 1.125rem;
     margin: 0px auto;
-} */
+}
 
 @media (min-width: 515px) {
     .Main .main-container {

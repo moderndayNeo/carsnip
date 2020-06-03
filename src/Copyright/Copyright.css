@@ -12,3 +12,12 @@
 .Copyright .CopyrightTop {
     text-align: center;
 }
+
+@media (min-width: 990px) {
+    .Copyright .CopyrightTop {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        text-align: left;
+    }
+}

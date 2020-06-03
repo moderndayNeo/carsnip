@@ -1,12 +1,23 @@
 .Copy {
-    text-size-adjust: 100%;
-    font-family: 'Roboto', helvetica, arial, sans-serif;
-    text-align: center;
-    box-sizing: inherit;
     margin: 0px;
     color: white;
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 300;
     margin-bottom: 0.625rem;
+}
+
+@media (min-width: 990px) {
+    .Copy {
+        text-size-adjust: 100%;
+        font-family: Roboto, helvetica, arial, sans-serif;
+        text-align: left;
+        box-sizing: inherit;
+        margin: 0px;
+        color: white;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
 }

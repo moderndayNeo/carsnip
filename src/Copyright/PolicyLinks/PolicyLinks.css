@@ -1,38 +1,44 @@
 .PolicyLinks {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: 'Roboto', helvetica, arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: inherit;
     list-style-type: none;
-    margin: 0px;
+    /* margin: 0px; */
     padding: 0px;
-    margin-left: auto;
+    /* margin-left: auto; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .PolicyLinks .PolicyLink {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    font-family: 'Roboto', helvetica, arial, sans-serif;
-    list-style-type: none;
-    box-sizing: inherit;
     display: inline;
     color: white;
     font-size: 0.875rem;
     font-weight: 300;
+    margin: 10px;
 }
 
 .PolicyLinks .PolicyLink a {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    font-family: 'Roboto', helvetica, arial, sans-serif;
-    list-style-type: none;
     font-size: 0.875rem;
     font-weight: 300;
     box-sizing: inherit;
     background-color: transparent;
     text-decoration: none;
     color: white;
+}
+
+@media (min-width: 990px) {
+    .PolicyLinks {
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        color: rgb(103, 106, 108);
+        font-family: Roboto, helvetica, arial, sans-serif;
+        font-size: 16px;
+        text-align: left;
+        box-sizing: inherit;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        margin-left: auto;
+        height: 18px;
+        align-items: center;
+    }
 }
