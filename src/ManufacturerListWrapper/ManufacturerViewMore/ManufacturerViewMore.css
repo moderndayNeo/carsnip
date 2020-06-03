@@ -3,3 +3,9 @@
     color: rgb(25, 141, 220);
     text-align: center;
 }
+
+@media (min-width: 1172px) {
+    .ManufacturerViewMore {
+        display: none;
+    }
+}
