@@ -104,3 +104,14 @@
         width: auto;
     }
 }
+
+@media (min-width: 1024px) {
+    .Nav .List .Item {
+        color: rgb(229, 229, 229);
+        font-weight: 300;
+        white-space: nowrap;
+        font-size: 0.75rem;
+        line-height: 1.4375rem;
+        height: 25px;
+    }
+}

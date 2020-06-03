@@ -5,7 +5,7 @@
     margin: 0px auto 1.875rem;
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1024px) {
     .DescriptionWrapper {
         display: block;
     }

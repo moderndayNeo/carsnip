@@ -23,3 +23,20 @@
         max-width: none;
     }
 }
+
+@media (min-width: 1024px) {
+    .MainLinks {
+        -webkit-font-smoothing: antialiased;
+--carsnip-orange: rgb(255, 96, 0);
+line-height: 1.15;
+text-size-adjust: 100%;
+color: rgb(103, 106, 108);
+font-family: 'Roboto', helvetica, arial, sans-serif;
+font-size: 16px;
+box-sizing: inherit;
+display: flex;
+flex-wrap: wrap;
+margin: 0 154px;
+max-width: none;
+    }
+}
