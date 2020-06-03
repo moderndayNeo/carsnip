@@ -37,11 +37,23 @@
 }
 
 .SocialLink .svg-outline {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
+    font-size: 16px;
+    box-sizing: inherit;
+    fill: rgb(112, 116, 122);
+}
 
-line-height: 1.15;
-text-size-adjust: 100%;
-font-family: 'Roboto', helvetica, arial, sans-serif;
-font-size: 16px;
-box-sizing: inherit;
-fill: rgb(112, 116, 122);
+@media (min-width: 515px) {
+    .SocialLink {
+        background-color: transparent;
+        display: block;
+        /* margin-right: 10px; */
+    }
+    .SocialLink svg {
+        width: 3.25rem;
+        height: 1.75rem;
+        overflow: hidden;
+    }
 }

@@ -23,3 +23,24 @@
     width: 100%;
     margin: 0px auto;
 }
+
+@media (min-width: 515px) {
+    .Newsletter {
+        padding: 2.1875rem 0px 2.5rem;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .Newsletter .Social {
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0px auto;
+        max-width: 11rem;
+        margin-top: 1.5rem;
+        margin-right: 0px;
+    }
+}
