@@ -23,5 +23,15 @@
 }
 @media (min-width: 888px) {
     .Cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 900px;
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 1172px) {
+    .Cards {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
