@@ -96,3 +96,11 @@
         padding: 0px;
     }
 }
+
+@media (min-width: 888px) {
+    .Nav {
+        max-width: 17.75rem;
+        margin: 0px auto 1.5625rem;
+        width: auto;
+    }
+}

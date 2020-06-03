@@ -16,3 +16,11 @@
         margin: 0px auto;
     }
 }
+
+@media (min-width: 888px) {
+    .MainLinks {
+        margin: 0px auto;
+        max-width: none;
+    }
+    
+}
