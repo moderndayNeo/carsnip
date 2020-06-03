@@ -75,3 +75,24 @@
     padding: 0.3125rem 0.5rem;
     border-radius: 0.8125rem;
 }
+
+@media (min-width: 515px) {
+    .Nav {
+        max-width: 17.75rem;
+        margin: 0px auto 1.5625rem;
+        width: 50%;
+    }
+    .Nav .NavHeader {
+        margin-top: 0px;
+        margin-bottom: 0.5rem;
+        font-family: Linotte, sans-serif;
+        color: rgb(255, 96, 0);
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .NavHeader .List {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+}

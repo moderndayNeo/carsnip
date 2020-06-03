@@ -11,10 +11,6 @@ export default function Main() {
                 <MainWrapper />
                 <Newsletter />
                 <ImportantInfo />
-   
- 
-
-
             </div>
         </div>
     )
