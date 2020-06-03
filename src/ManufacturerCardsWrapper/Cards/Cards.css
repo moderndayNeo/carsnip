@@ -4,15 +4,24 @@
     -webkit-box-pack: center;
     justify-content: center;
     max-width: 76rem;
-    width: 339px;
+    /* width: 339px; */
+    width: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
+@media (min-width: 604px) {
+    .Cards {
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        justify-content: center;
+        max-width: 76rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media (min-width: 888px) {
     .Cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* width: 500px; */
     }
 }

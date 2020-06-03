@@ -6,3 +6,18 @@
     margin-bottom: 2.1875rem;
     text-align: center;
 }
+
+@media (min-width: 604px) {
+    .ManufacturerListTitle {
+        font-family: Linotte, sans-serif;
+        font-weight: 400;
+        color: rgb(61, 68, 79);
+        font-size: 1.3125rem;
+        text-align: center;
+        margin-bottom: 1.875rem;
+    }
+}
+@media (min-width: 888px) {
+    .ManufacturerListTitle {
+    }
+}
