@@ -28,3 +28,24 @@
     font-weight: 550;
     text-decoration: none;
 }
+
+@media (min-width: 604px) {
+    .ListWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    .ListWrapper li {
+        max-width: 16.5rem;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        margin-bottom: 1.25rem;
+        display: block;
+    }
+}
+
+@media (min-width: 860px) {
+    .ListWrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
