@@ -24,12 +24,12 @@ export default function SearchBar() {
                         '5 Door Petrol London Automatic',
                         'Hatchback 5 Door Diesel',
                     ]}
-                    cursor=""
-                    pause="4000"
-                    emptyPause="1000"
+                    cursor={false}
+                    pause={4000}
+                    emptyPause={1000}
                     className="ReactRotatingText"
-                    typingInterval="140"
-                    deletingInterval="50"
+                    typingInterval={140}
+                    deletingInterval={50}
                 />
             )}
 

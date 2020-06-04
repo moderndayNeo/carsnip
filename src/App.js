@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Header from './Header/Header'
 import CarSearch from './CarSearch/CarSearch'
@@ -8,11 +8,19 @@ import Main from './Main/Main'
 import Copyright from './Copyright/Copyright'
 
 function App() {
+    const [popupMenuVisible, setPopupMenuVisible] = useState(false)
+
+    const toggleMenu = () => {
+        setPopupMenuVisible(!popupMenuVisible)
+        console.log(popupMenuVisible)
+    }
+
     return (
         <div className="App">
             <section className="top">
 
-            <Header />
+            <Header onClick={toggleMenu} />
+
             <CarSearch />
             </section>
 

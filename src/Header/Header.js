@@ -3,10 +3,12 @@ import './Header.css'
 import MenuButton from './MenuButton/MenuButton'
 import HeaderNav from './HeaderNav/HeaderNav'
 
-export default function Header() {
+export default function Header({ onClick }) {
+
+
     return (
         <div className="Header">
-            <MenuButton />
+            <MenuButton onClick={onClick} />
             <HeaderNav />
         </div>
     )
