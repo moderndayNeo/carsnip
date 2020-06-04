@@ -8,7 +8,7 @@ import {
     renaultClioImg,
     vwGolfImg,
     bmwX4Img,
-} from '../../../../Media/Images/scroller-car-images'
+} from '../../../../../Media/Images/scroller-car-images'
 
 export default function Scroller() {
     // useEffect(() => {

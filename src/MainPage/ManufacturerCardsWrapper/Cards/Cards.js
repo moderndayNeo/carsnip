@@ -14,7 +14,7 @@ import {
     vauxhallLogo,
     peugeotLogo,
     audiLogo,
-} from '../..//Media/Images/manufacturer-cards-images'
+} from '../../../Media/Images/manufacturer-cards-images'
 
 export default function Cards() {
     return (

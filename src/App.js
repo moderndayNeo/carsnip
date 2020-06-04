@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
-import Header from './Header/Header'
-import CarSearch from './CarSearch/CarSearch'
-import ManufacturerCardsWrapper from './ManufacturerCardsWrapper/ManufacturerCardsWrapper'
-import ManufacturerListWrapper from './ManufacturerListWrapper/ManufacturerListWrapper'
-import Main from './Main/Main'
-import Copyright from './Copyright/Copyright'
+import MainPage from './MainPage/MainPage'
+import PopupMenu from './PopupMenu/PopupMenu'
 
 function App() {
     const [popupMenuVisible, setPopupMenuVisible] = useState(false)
@@ -17,16 +13,22 @@ function App() {
 
     return (
         <div className="App">
-            <section className="top">
-                <Header onClick={toggleMenu} />
-                <CarSearch />
-            </section>
-            <ManufacturerCardsWrapper />
-            <ManufacturerListWrapper />
-            <Main />
-            <Copyright />
+            {popupMenuVisible && <PopupMenu />}
+            {/* <MainPage
+                onClick={toggleMenu}
+                popupMenuVisible={popupMenuVisible}
+            /> */}
         </div>
     )
 }
 
 export default App
+/*
+ Click MenuButton
+ Push the MainPage to the right, the width of the popupMenu
+ Apply a dark filter to the MainPage
+ Apply a click event listener. If user clicks on mainpage, then the popupmenu disappears
+
+Popupmenu slides in from left
+
+ */
