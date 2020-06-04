@@ -18,12 +18,9 @@ function App() {
     return (
         <div className="App">
             <section className="top">
-
-            <Header onClick={toggleMenu} />
-
-            <CarSearch />
+                <Header onClick={toggleMenu} />
+                <CarSearch />
             </section>
-
             <ManufacturerCardsWrapper />
             <ManufacturerListWrapper />
             <Main />

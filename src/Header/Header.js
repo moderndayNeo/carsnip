@@ -5,7 +5,6 @@ import HeaderNav from './HeaderNav/HeaderNav'
 
 export default function Header({ onClick }) {
 
-
     return (
         <div className="Header">
             <MenuButton onClick={onClick} />
