@@ -17,12 +17,12 @@ export default function SearchBar() {
             {!search && (
                 <ReactRotatingText
                     items={[
+                        '4x4 70,000 miles £15k Cardiff',
                         'Sports Convertible Blue £21k',
                         'BMW X4 £14k Black',
                         'Petrol Hatchback Manual £12k',
                         '5 Door Petrol London Automatic',
                         'Hatchback 5 Door Diesel',
-                        '4x4 70,000 miles £15k Cardiff',
                     ]}
                     cursor=""
                     pause="4000"
