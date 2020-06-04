@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
     .CarsnipLogo {
         width: 14rem;
         height: 3.25rem;

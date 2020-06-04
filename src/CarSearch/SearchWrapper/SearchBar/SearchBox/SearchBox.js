@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './SearchBox.css'
 
 
-export default function SearchBox() {
-    const [search, setSearch] = useState("")
+export default function SearchBox({ onChange, search }) {
 
-    const updateSearch = (e) => {
-        setSearch(e.target.value)
-    }
+   
 
     return (
                <input
@@ -16,8 +13,8 @@ export default function SearchBox() {
                 autoFocus=""
                 className="SearchBox"
                 value={search}
-                placeholder="Hatchback 5 Door Diesel"
-                onChange={e => updateSearch(e)}
+                // placeholder="Hatchback 5 Door Diesel"
+                onChange={onChange}
             />
     )
 }
