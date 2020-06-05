@@ -1,10 +1,9 @@
 import React from 'react'
 import './Overlay.css'
 
-export default function Overlay() {
+export default function Overlay({ onClick }) {
     return (
-        <div className="Overlay">
-            
+        <div className="Overlay" onClick={onClick}>
         </div>
     )
 }

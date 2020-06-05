@@ -1,4 +1,4 @@
-.HeaderNav {
+.Header .HeaderNav {
     line-height: 1.15;
     text-size-adjust: 100%;
     color: rgb(103, 106, 108);
@@ -10,7 +10,7 @@
     display: none;
 }
 
-.HeaderNav ul {
+.Header .HeaderNav ul {
     line-height: 1.15;
     text-size-adjust: 100%;
     color: rgb(103, 106, 108);
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: 1024px) {
-    .HeaderNav {
+    .Header .HeaderNav {
         display: block;
     }
 }

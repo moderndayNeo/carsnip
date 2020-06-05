@@ -1,12 +1,10 @@
 .MainPage {
     /* width: 100%;
     height: 100%; */
+    
+    transition: all 200ms ease-in-out 0s;
 }
 
 .faded {
     transform: translateX(208px);
-    transition: all 200ms ease-in-out 0s;
-
-    /* position: absolute;
-    left: 50px; */
 }

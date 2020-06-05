@@ -8,12 +8,11 @@ function App() {
 
     const toggleMenu = () => {
         setPopupMenuVisible(!popupMenuVisible)
-        console.log(popupMenuVisible)
     }
 
     return (
         <div className="App">
-            <PopupMenu className={`PopupMenu ${popupMenuVisible && "popupMenuVisible"}`} />
+            <PopupMenu popupMenuVisible={popupMenuVisible} />
             <MainPage
                 onClick={toggleMenu}
                 popupMenuVisible={popupMenuVisible}
