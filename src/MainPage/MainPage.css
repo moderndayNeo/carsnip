@@ -6,5 +6,6 @@
 }
 
 .faded {
-    transform: translateX(208px);
+    /* transform: translateX(208px); */
+    transform: translateX(var(--popupMenuWidth));
 }

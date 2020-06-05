@@ -34,20 +34,24 @@
 }
 
 .PopupMenu .HeaderNav ul .NavLink {
-    margin-bottom: 1.875rem;
+    margin: 0 auto 1.875rem auto;
 }
 
 .PopupMenu .HeaderNav ul .NavLink {
     background-color: transparent;
-    font-size: 0.8125rem;
+    font-size: 13px;
     color: rgb(100, 105, 114);
     text-transform: uppercase;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
 }
+.PopupMenu .HeaderNav ul .NavLink a {
+    font-weight: 600;
+    font-size: 13px;
+}
 
 .popupMenuVisible {
-    transform: translateX(208px);
+    transform: translateX(var(--popupMenuWidth));
     transition: all 200ms ease-in-out 0s;
 }
