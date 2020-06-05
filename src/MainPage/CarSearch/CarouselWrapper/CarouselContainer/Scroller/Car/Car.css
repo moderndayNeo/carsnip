@@ -21,14 +21,7 @@
 
 @media (min-width: 1024px) {
     .Car {
-        line-height: 1.15;
-        text-size-adjust: 100%;
-        color: rgb(103, 106, 108);
-        font-family: Roboto, helvetica, arial, sans-serif;
-        font-size: 16px;
-        text-align: center;
-        box-sizing: inherit;
-        position: relative;
+        /* position: relative; */
         opacity: 0.3;
         transition: opacity 500ms ease 0s;
         width: 18.0625rem;
@@ -38,13 +31,6 @@
     }
 
     .Car img {
-        line-height: 1.15;
-        text-size-adjust: 100%;
-        color: rgb(103, 106, 108);
-        font-family: Roboto, helvetica, arial, sans-serif;
-        font-size: 16px;
-        text-align: center;
-        box-sizing: inherit;
         border-style: none;
         width: 100%;
         height: 100%;

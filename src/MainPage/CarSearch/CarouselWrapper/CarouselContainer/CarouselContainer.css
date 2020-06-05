@@ -1,13 +1,6 @@
 .CarouselContainer {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: 'Roboto', helvetica, arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: inherit;
     margin-top: 10.625rem;
-    position: relative;
+    /* position: relative; */
     height: 5.3125rem;
     border-bottom: 0.0625rem solid rgb(228, 228, 228);
     padding-bottom: 15px;

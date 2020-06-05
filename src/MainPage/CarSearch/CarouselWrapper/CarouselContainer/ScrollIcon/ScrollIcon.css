@@ -1,11 +1,4 @@
 .ScrollIcon {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: 'Roboto', helvetica, arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: inherit;
     width: 2.0625rem;
     height: 2.0625rem;
     background-color: rgb(255, 255, 255);
@@ -22,12 +15,5 @@
 }
 
 .ScrollIcon svg polygon {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: 'Roboto', helvetica, arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    box-sizing: inherit;
     fill: #e4e4e4;
 }

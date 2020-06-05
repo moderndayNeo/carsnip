@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Scroller.css'
 import Car from './Car/Car'
 import {
@@ -10,16 +10,56 @@ import {
     bmwX4Img,
 } from '../../../../../Media/Images/scroller-car-images'
 
+// scroller.style.transform = `translateX(${carImgWidth}px)` // shift over one car width
+
 export default function Scroller() {
+    const [shifted, setShifted] = useState({ count: 0 })
+
     // useEffect(() => {
-    //     ;(async () => {
-    //         const img = await request_img
-    //         setimg(img)
-    //     })()
+    //     setTimeout(() => {
+    //         setShifted(shifted.count + 1)
+    //     }, 2000)
     // }, [])
 
+    setTimeout(() => {
+        setShifted(!shifted)
+    }, 2000);
+
+    // console.log(shifted.count)
+
+    let carWidth = 0
+
+    setTimeout(() => {
+        carWidth += 100
+    }, 2000)
+
+    const slidingScroller = {
+        transform: `translateX(${carWidth}px)`,
+        transition: 'left 1s ease 0s',
+    }
+
     return (
-        <div className="Scroller">
+        // <div className="Scroller">
+        <div
+            className={`Scroller ${shifted && 'shifted'}`}
+            // style={slidingScroller}
+        >
+            <div className="firstSix">
+                <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
+                <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
+                <Car alt="BMW X4" src={bmwX4Img} />
+                <Car alt="Renault Clio" src={renaultClioImg} />
+                <Car alt="Ford Fiesta" src={fordFiestaImg} />
+                <Car alt="Volkswagen Golf" src={vwGolfImg} />
+            </div>
+
+            <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
+            <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
+            <Car alt="BMW X4" src={bmwX4Img} />
+            <Car alt="Renault Clio" src={renaultClioImg} />
+            <Car alt="Ford Fiesta" src={fordFiestaImg} />
+            <Car alt="Volkswagen Golf" src={vwGolfImg} />
+
             <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
             <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
             <Car alt="BMW X4" src={bmwX4Img} />

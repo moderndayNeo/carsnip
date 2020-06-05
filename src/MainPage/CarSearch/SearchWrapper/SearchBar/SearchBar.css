@@ -1,11 +1,5 @@
 .SearchBar {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-    color: rgb(103, 106, 108);
-    font-family: 'Roboto', helvetica, arial, sans-serif;
     font-size: 18px;
-    text-align: center;
-    box-sizing: inherit;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0.9375rem 0.25rem;
     display: flex;
