@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Car.css'
 
 export default function Car({ alt, src }) {
-    const [centered, setCentered] = useState(false)
+    const [centered, setCentered] = useState(true)
     
     useEffect(() => {
         setCentered(false)
