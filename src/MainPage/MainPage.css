@@ -4,6 +4,9 @@
 }
 
 .faded {
+    transform: translateX(208px);
+    transition: all 200ms ease-in-out 0s;
+
     /* position: absolute;
     left: 50px; */
 }

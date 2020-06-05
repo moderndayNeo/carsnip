@@ -3,9 +3,9 @@ import './PopupMenu.css'
 import CarsnipLogo from '../MainPage/CarSearch/CarsnipLogo/CarsnipLogo'
 import HeaderNav from '../MainPage/Header/HeaderNav/HeaderNav';
 
-export default function PopupMenu() {
+export default function PopupMenu({ className }) {
     return (
-        <nav className="PopupMenu">
+        <nav className={className}>
             <a className="LogoWrapper" href="/">
                 <CarsnipLogo />
             </a>

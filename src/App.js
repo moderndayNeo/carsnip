@@ -13,11 +13,11 @@ function App() {
 
     return (
         <div className="App">
-            {popupMenuVisible && <PopupMenu />}
-            {/* <MainPage
+            <PopupMenu className={`PopupMenu ${popupMenuVisible && "popupMenuVisible"}`} />
+            <MainPage
                 onClick={toggleMenu}
                 popupMenuVisible={popupMenuVisible}
-            /> */}
+            />
         </div>
     )
 }

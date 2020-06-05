@@ -6,10 +6,12 @@ import ManufacturerCardsWrapper from './ManufacturerCardsWrapper/ManufacturerCar
 import ManufacturerListWrapper from './ManufacturerListWrapper/ManufacturerListWrapper'
 import Main from './Main/Main'
 import Copyright from './Copyright/Copyright'
+import Overlay from './Overlay/Overlay'
 
 export default function MainPage({ onClick, popupMenuVisible }) {
     return (
         <div className={`MainPage ${popupMenuVisible && "faded"}`}>
+            <Overlay />
             <section className="top">
                 <Header onClick={onClick} />
                 <CarSearch />
