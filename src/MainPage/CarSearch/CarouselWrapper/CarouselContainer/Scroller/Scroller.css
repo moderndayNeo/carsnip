@@ -1,52 +1,34 @@
 .Scroller {
     display: flex;
-    /* transform: translate3d(0px, 0px, 0px); */
-    /* left: calc(((50% - 61.5rem) - 30.75rem) - 5.125rem); */
     left: 0;
     position: absolute;
     /* transition: left 1s ease 0s; */
-    transition: left 7s ease 0s;
-    --car-width: 9rem;
+    animation-name: sliding;
+    animation-fill-mode: forwards;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
 }
 
-.Scroller .firstSix {
-    display: flex; 
-    flex-direction: row;
-}
-.Scroller .firstSix .Car {
-    opacity: 1;
+.sliding {
+    /* left: -10.25rem; */
+    /* left: -500px; */
 }
 
-.shifted {
-    left: -500px;
-    /* transform: translateX(-9rem); */
-    /* transition: left 1s ease 0s; */
+
+@keyframes sliding {
+    from {
+        left: 0;
+    }
+    to {
+        left: -500px;
+    }
 }
 
-line-height: 1.15;
-text-size-adjust: 100%;
-color: rgb(103, 106, 108);
-font-family: Roboto, helvetica, arial, sans-serif;
-font-size: 16px;
-text-align: center;
-box-sizing: inherit;
-position: absolute;
-top: 0px;
-display: flex;
-transform: translate3d(0px, 0px, 0px);
+
+
+/* 
+left: calc(((50% - 61.5rem) - 30.75rem) - 5.125rem);
 left: calc((50% - 61.5rem) - 5.125rem);
-transition: left 1s ease 0s;
-
-line-height: 1.15;
-text-size-adjust: 100%;
-color: rgb(103, 106, 108);
-font-family: Roboto, helvetica, arial, sans-serif;
-font-size: 16px;
-text-align: center;
-box-sizing: inherit;
-position: absolute;
-top: 0px;
-display: flex;
-transform: translate3d(0px, 0px, 0px);
 left: calc(((50% - 61.5rem) - 10.25rem) - 5.125rem);
-transition: left 1s ease 0s;
+*/
