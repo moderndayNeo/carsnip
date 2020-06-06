@@ -13,6 +13,10 @@
     font-size: 16px;
 }
 
+.invisible {
+    display: none;
+}
+
 @media (min-width: 1024px) {
     .ReactRotatingText {
         top: 25px;

@@ -25,7 +25,7 @@ export default function SearchBar() {
         <form role="search" method="get" action="/search" className="SearchBar">
             <SpeechButton />
 
-            {!loading && !search && (
+            {!loading && (
                 <ReactRotatingText
                     items={[
                         '4x4 70,000 miles £15k Cardiff',
@@ -38,7 +38,7 @@ export default function SearchBar() {
                     cursor={false}
                     pause={4000}
                     emptyPause={1000}
-                    className="ReactRotatingText"
+                    className={`ReactRotatingText ${search && "invisible"}`}
                     typingInterval={140}
                     deletingInterval={50}
                     onClick={focusOnSearchBox}
@@ -48,7 +48,6 @@ export default function SearchBar() {
             <SearchBox
                 onChange={(e) => updateSearch(e)}
                 search={search}
-                loading={loading}
             />
             <SearchButton />
         </form>
