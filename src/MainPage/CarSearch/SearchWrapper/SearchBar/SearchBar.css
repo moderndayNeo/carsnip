@@ -4,6 +4,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0.9375rem 0.25rem;
     display: flex;
     animation: 1s ease 0s 1 normal none running ldXWMK;
+    animation: appear 1s ease 0s 1 normal none running;
 }
 
 .ReactRotatingText {

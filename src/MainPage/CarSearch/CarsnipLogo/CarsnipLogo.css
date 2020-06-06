@@ -3,6 +3,25 @@
     height: 1.9375rem;
     animation: 1s ease 0s 1 normal none running ldXWMK;
     overflow: hidden;
+    /* opacity: 0.5; */
+    /* position: absolute; */
+    /* top: -1px; */
+    animation: appear 1s ease 0s 1 normal none running;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-1.25rem);
+        -ms-transform: translateY(-1.25rem);
+        transform: translateY(-1.25rem);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 @media (min-width: 1024px) {
