@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './SearchBar.css'
 import SpeechButton from './SpeechButton/SpeechButton'
 import SearchBox from './SearchBox/SearchBox'
@@ -7,14 +7,25 @@ var ReactRotatingText = require('react-rotating-text')
 
 export default function SearchBar() {
     const [search, setSearch] = useState('')
+    const [loading, setLoading] = useState(true)
     const updateSearch = (e) => {
         setSearch(e.target.value)
     }
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 3000)
+    }, [loading])
+
+    const focusOnSearchBox = () => {
+        document.querySelector("#root > div > div > section > div.CarSearch > div.SearchWrapper > form > input").focus()
+    }
+
     return (
         <form role="search" method="get" action="/search" className="SearchBar">
             <SpeechButton />
 
-            {!search && (
+            {!loading && !search && (
                 <ReactRotatingText
                     items={[
                         '4x4 70,000 miles £15k Cardiff',
@@ -30,10 +41,15 @@ export default function SearchBar() {
                     className="ReactRotatingText"
                     typingInterval={140}
                     deletingInterval={50}
+                    onClick={focusOnSearchBox}
                 />
             )}
 
-            <SearchBox onChange={(e) => updateSearch(e)} search={search} />
+            <SearchBox
+                onChange={(e) => updateSearch(e)}
+                search={search}
+                loading={loading}
+            />
             <SearchButton />
         </form>
     )

@@ -4,7 +4,6 @@ import './HeaderNav.css'
 
 export default function HeaderNav({ popupMenuVisible }) {
 
-    console.log(popupMenuVisible)
     return (
         <nav className="HeaderNav">
             <ul>

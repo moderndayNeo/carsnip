@@ -1,11 +1,7 @@
 .CarsnipLogo {
     width: 9.4375rem;
     height: 1.9375rem;
-    animation: 1s ease 0s 1 normal none running ldXWMK;
     overflow: hidden;
-    /* opacity: 0.5; */
-    /* position: absolute; */
-    /* top: -1px; */
     animation: appear 1s ease 0s 1 normal none running;
 }
 
