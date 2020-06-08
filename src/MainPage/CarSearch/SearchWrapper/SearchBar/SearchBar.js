@@ -18,17 +18,13 @@ export default function SearchBar() {
         }, 3000)
     }, [loading])
 
-
-
     const handleTypingFinished = () => {
         console.log('Typing finished')
-
     }
 
     return (
         <form role="search" method="get" action="/search" className="SearchBar">
             <SpeechButton />
-
             {!loading && (
                 <ReactRotatingText
                     items={[
@@ -49,7 +45,6 @@ export default function SearchBar() {
                     onTypingEnd={handleTypingFinished}
                 />
             )}
-
             <SearchBox onChange={(e) => updateSearch(e)} search={search} />
             <SearchButton />
         </form>
