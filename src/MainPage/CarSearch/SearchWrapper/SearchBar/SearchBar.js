@@ -3,7 +3,8 @@ import './SearchBar.css'
 import SpeechButton from './SpeechButton/SpeechButton'
 import SearchBox from './SearchBox/SearchBox'
 import SearchButton from './SearchButton/SearchButton'
-var ReactRotatingText = require('react-rotating-text')
+import ReactRotatingText from 'react-rotating-text'
+import { focusOnSearchBox } from '../../../../carsnipFunctions'
 
 export default function SearchBar() {
     const [search, setSearch] = useState('')
@@ -17,8 +18,11 @@ export default function SearchBar() {
         }, 3000)
     }, [loading])
 
-    const focusOnSearchBox = () => {
-        document.querySelector("#root > div > div > section > div.CarSearch > div.SearchWrapper > form > input").focus()
+
+
+    const handleTypingFinished = () => {
+        console.log('Typing finished')
+
     }
 
     return (
@@ -38,17 +42,15 @@ export default function SearchBar() {
                     cursor={false}
                     pause={4000}
                     emptyPause={1000}
-                    className={`ReactRotatingText ${search && "invisible"}`}
+                    className={`ReactRotatingText ${search && 'invisible'}`}
                     typingInterval={140}
                     deletingInterval={50}
                     onClick={focusOnSearchBox}
+                    onTypingEnd={handleTypingFinished}
                 />
             )}
 
-            <SearchBox
-                onChange={(e) => updateSearch(e)}
-                search={search}
-            />
+            <SearchBox onChange={(e) => updateSearch(e)} search={search} />
             <SearchButton />
         </form>
     )
