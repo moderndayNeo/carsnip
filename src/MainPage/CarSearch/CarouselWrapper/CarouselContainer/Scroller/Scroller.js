@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Scroller.css'
 import Car from './Car/Car'
 import {
@@ -9,14 +9,23 @@ import {
     vwGolfImg,
     bmwX4Img,
 } from '../../../../../Media/Images/scroller-car-images'
+import { CarouselContext } from '../../../CarouselContextProvider'
 
-export default function Scroller() {
-    const [sliding, setSliding] = useState(false)
+const carWidth = 10.25; // 10.25rem
+
+export default function Scroller({ scrollerPosition }) {
+    console.log(scrollerPosition)
+
+    const scrollerStyle = {
+
+        left: `-${scrollerPosition * 10.25}rem`
+
+    }
 
     return (
-        <div
-            className={`Scroller ${sliding && 'sliding'}`}
-        >
+        <div className="Scroller" style={scrollerStyle}>
+            <CarouselContext.Consumer>{() => <></>}</CarouselContext.Consumer>
+
             <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
             <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
             <Car alt="BMW X4" src={bmwX4Img} />

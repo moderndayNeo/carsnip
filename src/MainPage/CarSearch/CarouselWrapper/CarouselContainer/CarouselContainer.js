@@ -2,11 +2,15 @@ import React from 'react'
 import './CarouselContainer.css'
 import Scroller from './Scroller/Scroller'
 import ScrollIcon from './ScrollIcon/ScrollIcon'
+import CarouselContextProvider from '../../CarouselContextProvider'
 
-export default function CarouselContainer() {
+export default function CarouselContainer({ scrollerPosition }) {
     return (
         <div className="CarouselContainer">
-            <Scroller />
+            <CarouselContextProvider>
+                <Scroller scrollerPosition={scrollerPosition}  />
+            </CarouselContextProvider>
+
             <ScrollIcon />
         </div>
     )

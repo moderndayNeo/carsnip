@@ -6,7 +6,7 @@ import SearchButton from './SearchButton/SearchButton'
 import ReactRotatingText from 'react-rotating-text'
 import { focusOnSearchBox } from '../../../../carsnipFunctions'
 
-export default function SearchBar() {
+export default function SearchBar({ onTypingEnd }) {
     const [search, setSearch] = useState('')
     const [loading, setLoading] = useState(true)
     const updateSearch = (e) => {
@@ -18,9 +18,7 @@ export default function SearchBar() {
         }, 3000)
     }, [loading])
 
-    const handleTypingFinished = () => {
-        console.log('Typing finished')
-    }
+  
 
     return (
         <form role="search" method="get" action="/search" className="SearchBar">
@@ -42,7 +40,7 @@ export default function SearchBar() {
                     typingInterval={140}
                     deletingInterval={50}
                     onClick={focusOnSearchBox}
-                    onTypingEnd={handleTypingFinished}
+                    onTypingEnd={onTypingEnd}
                 />
             )}
             <SearchBox onChange={(e) => updateSearch(e)} search={search} />

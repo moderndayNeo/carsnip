@@ -1,19 +1,15 @@
 .Scroller {
     display: flex;
-    left: 0;
+    /* left: 0; */
     position: absolute;
     /* transition: left 1s ease 0s; */
-    animation-name: sliding;
+    /* animation-name: sliding; */
     animation-fill-mode: forwards;
     animation-duration: 6s;
     animation-delay: 0s;
     animation-timing-function: linear;
 }
 
-.sliding {
-    /* left: -10.25rem; */
-    /* left: -500px; */
-}
 
 
 @keyframes sliding {
@@ -31,4 +27,5 @@
 left: calc(((50% - 61.5rem) - 30.75rem) - 5.125rem);
 left: calc((50% - 61.5rem) - 5.125rem);
 left: calc(((50% - 61.5rem) - 10.25rem) - 5.125rem);
+1 car = 10.25rem
 */
