@@ -18,8 +18,6 @@ export default function SearchBar({ onTypingEnd }) {
         }, 3000)
     }, [loading])
 
-  
-
     return (
         <form role="search" method="get" action="/search" className="SearchBar">
             <SpeechButton />
@@ -34,10 +32,12 @@ export default function SearchBar({ onTypingEnd }) {
                         'Hatchback 5 Door Diesel',
                     ]}
                     cursor={false}
-                    pause={4000}
+                    // pause={4000}
+                    pause={100}
                     emptyPause={1000}
                     className={`ReactRotatingText ${search && 'invisible'}`}
-                    typingInterval={140}
+                    // typingInterval={140}
+                    typingInterval={10}
                     deletingInterval={50}
                     onClick={focusOnSearchBox}
                     onTypingEnd={onTypingEnd}

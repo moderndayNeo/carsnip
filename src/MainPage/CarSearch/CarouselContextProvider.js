@@ -1,13 +1,10 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext } from 'react'
 
 export const CarouselContext = createContext()
 
 export default function CarouselContextProvider(props) {
-
-    const [test, setTest] = useState('orange')
-
     return (
-        <CarouselContext.Provider>
+        <CarouselContext.Provider value={[1,2,3]}>
             {props.children}
         </CarouselContext.Provider>
     )

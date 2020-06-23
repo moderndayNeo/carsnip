@@ -5,17 +5,20 @@ import SearchWrapper from './SearchWrapper/SearchWrapper'
 import CarouselWrapper from './CarouselWrapper/CarouselWrapper'
 export default function CarSearch() {
     const [scrollerPosition, setScrollerPosition] = useState(0)
+    const [typedFirstPhrase,setTypedFirstPhrase ] = useState(false)
 
     const handleTypingFinished = () => {
-        console.log('Typing finished')
-        setScrollerPosition(scrollerPosition + 1)
+        setTypedFirstPhrase(true)
+        scrollerPosition < 5 ? setScrollerPosition(scrollerPosition + 1) : setScrollerPosition(0)
+        console.log(`typedFirstPhrase is: ${typedFirstPhrase},
+        scrollerPosition is: ${scrollerPosition}`)
     }
 
     return (
         <div className="CarSearch">
             <CarsnipLogo />
             <SearchWrapper onTypingEnd={handleTypingFinished} />
-            <CarouselWrapper scrollerPosition={scrollerPosition} />
+            <CarouselWrapper scrollerPosition={scrollerPosition} typedFirstPhrase={typedFirstPhrase} />
         </div>
     )
 }

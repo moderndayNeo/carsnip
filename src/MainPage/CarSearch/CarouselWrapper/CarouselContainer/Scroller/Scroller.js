@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Scroller.css'
 import Car from './Car/Car'
 import {
@@ -11,19 +11,29 @@ import {
 } from '../../../../../Media/Images/scroller-car-images'
 import { CarouselContext } from '../../../CarouselContextProvider'
 
-const carWidth = 10.25; // 10.25rem
+const carWidth = 10.25 // 10.25rem
 
-export default function Scroller({ scrollerPosition }) {
-    console.log(scrollerPosition)
+export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
+    const [scrollerStyle, setScrollerStyle] = useState({
+        left: `calc(((50% - 61.5rem) - 0) - 5.125rem)`
+    })
 
-    const scrollerStyle = {
+    useEffect(() => {
+        setScrollerStyle({
+            left: `calc(((50% - 61.5rem) -${
+                carWidth * (scrollerPosition - 1)
+            }rem) - 5.125rem)`
+        })
+        // console.log(scrollerPosition)
+        // console.log(scrollerStyle)
+    }, [scrollerPosition])
 
-        left: `-${scrollerPosition * 10.25}rem`
-
-    }
 
     return (
-        <div className="Scroller" style={scrollerStyle}>
+        <div
+            className={`Scroller ${!typedFirstPhrase && 'sliding'}`}
+            style={scrollerStyle}
+        >
             <CarouselContext.Consumer>{() => <></>}</CarouselContext.Consumer>
 
             <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />

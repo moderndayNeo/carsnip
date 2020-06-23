@@ -23,11 +23,4 @@ function App() {
 
 export default App
 /*
- Click MenuButton
- Push the MainPage to the right, the width of the popupMenu
- Apply a dark filter to the MainPage
- Apply a click event listener. If user clicks on mainpage, then the popupmenu disappears
-
-Popupmenu slides in from left
-
  */

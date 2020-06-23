@@ -6,7 +6,6 @@ export default function SearchWrapper({ onTypingEnd }) {
     return (
         <div className="SearchWrapper">
               <SearchBar onTypingEnd={onTypingEnd} />
-
             </div>
     )
 }
