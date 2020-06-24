@@ -2,12 +2,13 @@
     display: flex;
     position: absolute;
     transition: left 1s ease 0s;
-    animation-name: sliding;
+    left: 0;
+    /* animation-name: sliding;
     animation-fill-mode: forwards;
     animation-duration: 10s;
     animation-delay: 0s;
     animation-timing-function: linear;
-    animation-play-state: running;
+    animation-play-state: running; */
 }
 
 @keyframes sliding {

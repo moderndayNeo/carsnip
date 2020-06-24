@@ -13,13 +13,20 @@ import {
 const carWidth = 10.25 // 10.25rem
 
 export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
-    const [scrollerStyle, setScrollerStyle] = useState({
-        left: `calc(((50% - 61.5rem) - 0) - 5.125rem)`,
-    })
+    const [scrollerStyle, setScrollerStyle] = useState({})
 
     useEffect(() => {
-        console.log(scrollerPosition)
-    }, [scrollerPosition])
+        setScrollerStyle({
+            left: `calc(((50% - 61.5rem) - ${typedFirstPhrase ? scrollerPosition * carWidth : -20}rem) - 5.125rem)`,
+            // left: `calc(((50% - 61.5rem) - ${scrollerPosition * carWidth}rem) - 5.125rem)`
+            // left: `-20rem`,
+            // transition: `left 10s linear 0s`
+            transition: `left ${typedFirstPhrase ? '1s ease' : '10s linear'} 0s`
+        })
+    }, [scrollerPosition, typedFirstPhrase])
+
+
+
 
     return (
         <div className="Scroller" style={scrollerStyle}>
