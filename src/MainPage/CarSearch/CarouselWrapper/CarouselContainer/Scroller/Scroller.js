@@ -17,16 +17,10 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
 
     useEffect(() => {
         setScrollerStyle({
-            left: `calc(((50% - 61.5rem) - ${typedFirstPhrase ? scrollerPosition * carWidth : -20}rem) - 5.125rem)`,
-            // left: `calc(((50% - 61.5rem) - ${scrollerPosition * carWidth}rem) - 5.125rem)`
-            // left: `-20rem`,
-            // transition: `left 10s linear 0s`
+            left: `calc(((50% - 61.5rem) - ${typedFirstPhrase ? scrollerPosition * carWidth : -20}rem) - 6.125rem)`,
             transition: `left ${typedFirstPhrase ? '1s ease' : '10s linear'} 0s`
         })
     }, [scrollerPosition, typedFirstPhrase])
-
-
-
 
     return (
         <div className="Scroller" style={scrollerStyle}>
