@@ -14,16 +14,24 @@ const carWidth = 10.25 // 10.25rem
 
 export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
     const [scrollerStyle, setScrollerStyle] = useState({})
+    
+    // useEffect(() => {
+        //     setScrollerStyle({
+            //         left: `calc(((50% - 61.5rem) - ${typedFirstPhrase ? scrollerPosition * carWidth : -20}rem) - 6.125rem)`,
+            //         transition: `left ${typedFirstPhrase ? '1s ease' : '10s linear'} 0s`
+            //     })
+            // }, [scrollerPosition, typedFirstPhrase])
+            
+    const myRef = React.createRef()
 
-    useEffect(() => {
-        setScrollerStyle({
-            left: `calc(((50% - 61.5rem) - ${typedFirstPhrase ? scrollerPosition * carWidth : -20}rem) - 6.125rem)`,
-            transition: `left ${typedFirstPhrase ? '1s ease' : '10s linear'} 0s`
-        })
-    }, [scrollerPosition, typedFirstPhrase])
+    // const highlighted = document.querySelector(`#root > div > div > section > div.CarSearch > div.CarouselWrapper > div > div.Scroller > div:nth-child(${scrollerPosition + 7})`)
+    // const previousCar = document.querySelector(`#root > div > div > section > div.CarSearch > div.CarouselWrapper > div > div.Scroller > div:nth-child(${scrollerPosition + 6})`)
+    // console.log(highlighted ? highlighted.style : null)
+    // if (highlighted) highlighted.style.border = '1px solid red';
+    // if (previousCar) previousCar.style.border = ''
 
     return (
-        <div className="Scroller" style={scrollerStyle}>
+        <div className="Scroller" style={scrollerStyle} ref={myRef} >
             <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
             <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
             <Car alt="BMW X4" src={bmwX4Img} />

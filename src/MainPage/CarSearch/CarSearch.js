@@ -12,6 +12,7 @@ export default function CarSearch() {
         scrollerPosition < 5 ? setScrollerPosition(scrollerPosition + 1) : setScrollerPosition(0)
     }
 
+
     return (
         <div className="CarSearch">
             <CarsnipLogo />

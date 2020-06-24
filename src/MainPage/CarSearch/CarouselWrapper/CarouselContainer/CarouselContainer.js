@@ -7,7 +7,8 @@ import CarouselContextProvider from '../../CarouselContextProvider'
 export default function CarouselContainer({
     scrollerPosition,
     typedFirstPhrase,
-}) {
+}) 
+{
     return (
         <div className="CarouselContainer">
             <CarouselContextProvider>
