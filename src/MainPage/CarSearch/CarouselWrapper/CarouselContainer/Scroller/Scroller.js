@@ -9,33 +9,20 @@ import {
     vwGolfImg,
     bmwX4Img,
 } from '../../../../../Media/Images/scroller-car-images'
-import { CarouselContext } from '../../../CarouselContextProvider'
 
 const carWidth = 10.25 // 10.25rem
 
 export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
     const [scrollerStyle, setScrollerStyle] = useState({
-        left: `calc(((50% - 61.5rem) - 0) - 5.125rem)`
+        left: `calc(((50% - 61.5rem) - 0) - 5.125rem)`,
     })
 
     useEffect(() => {
-        setScrollerStyle({
-            left: `calc(((50% - 61.5rem) -${
-                carWidth * (scrollerPosition - 1)
-            }rem) - 5.125rem)`
-        })
-        // console.log(scrollerPosition)
-        // console.log(scrollerStyle)
+        console.log(scrollerPosition)
     }, [scrollerPosition])
 
-
     return (
-        <div
-            className={`Scroller ${!typedFirstPhrase && 'sliding'}`}
-            style={scrollerStyle}
-        >
-            <CarouselContext.Consumer>{() => <></>}</CarouselContext.Consumer>
-
+        <div className="Scroller" style={scrollerStyle}>
             <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
             <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
             <Car alt="BMW X4" src={bmwX4Img} />
