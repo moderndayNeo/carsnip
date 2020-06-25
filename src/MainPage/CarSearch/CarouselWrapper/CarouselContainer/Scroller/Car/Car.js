@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react'
 import './Car.css'
 import Highlight from './Highlight/Highlight'
 
-export default function Car({ alt, src }) {
-    const [centered, setCentered] = useState(true)
-
+export default function Car({ alt, src, highlighted }) {
     return (
         <div className="Car">
-            {centered && <Highlight alt={alt} />}
+            {highlighted && <Highlight alt={alt} />}
             <img alt={alt} src={src} />
         </div>
     )

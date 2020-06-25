@@ -13,7 +13,7 @@ import {
 export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
     const carWidth = 10.25 // 10.25rem
     const [scrollerStyle, setScrollerStyle] = useState({
-        left: `100px` //remove when done editing tooltip class
+        left: `100px`, //remove when done editing tooltip class
     })
     const containerRef = useRef(null)
 
@@ -40,7 +40,15 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
 
     return (
         <div className="Scroller" style={scrollerStyle} ref={containerRef}>
-            <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
+            {/* carList.map((index, alt, src) => (
+                <Car key={index} alt={alt} src={src} highlighted={index === scrollerPosition + 6 ? true : false } />
+            ))  */}
+
+            <Car
+                alt="Land Rover Discovery"
+                src={landRoverDiscoveryImg}
+                highlighted
+            />
             <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
             <Car alt="BMW X4" src={bmwX4Img} />
             <Car alt="Renault Clio" src={renaultClioImg} />
