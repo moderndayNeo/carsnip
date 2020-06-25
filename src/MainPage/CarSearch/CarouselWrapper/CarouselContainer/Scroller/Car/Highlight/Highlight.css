@@ -4,6 +4,7 @@
 
 .Highlight.highlighted {
     opacity: 1;
+    transition: opacity 1s ease;
 }
 
 .Highlight .Tooltip {
