@@ -14,12 +14,9 @@
     opacity: 1;
 }
 
-.Car.bordered {
-    border: 1px solid green;
+.Car.transparent img {
+    opacity: 0.3;
 }
-/*
-remove when finished applying tooltip class
-*/
 
 @media (min-width: 1024px) {
     .Car {

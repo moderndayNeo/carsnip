@@ -17,11 +17,17 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
 
         if (scrollerPosition > -1) {
             centeredCar.children[0].classList.add('highlighted')
+            centeredCar.classList.remove('transparent')
             previousCar.children[0].classList.remove('highlighted')
+            previousCar.classList.add('transparent')
         }
-        if (scrollerPosition === 0)
+
+        if (scrollerPosition === 0) {
             lastCar.children[0].classList.remove('highlighted')
+            lastCar.classList.remove('transparent')
+        }
     }, [containerRef, scrollerPosition])
+
 
     useEffect(() => {
         setScrollerStyle({
@@ -34,10 +40,18 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
         })
     }, [scrollerPosition, typedFirstPhrase])
 
+
     let allCars = []
     let sixCars = []
     carList.map(({ alt, src }, index) =>
-        sixCars.push(<Car key={index} alt={alt} src={src} />)
+        sixCars.push(
+            <Car
+                key={index}
+                alt={alt}
+                src={src}
+                transparent={typedFirstPhrase}
+            />
+        )
     )
 
     for (let i = 0; i < 3; i++) {
