@@ -13,17 +13,16 @@ import {
 export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
     const carWidth = 10.25 // 10.25rem
     const [scrollerStyle, setScrollerStyle] = useState({})
-    const containerRef = useRef()
+    const containerRef = useRef(null)
 
     useEffect(() => {
-        const centeredCar = containerRef.current?.children[scrollerPosition + 6]
-        const previousCar = centeredCar?.previousSibling
+        const centeredCar = containerRef.current.children[scrollerPosition + 6]
+        const previousCar = centeredCar.previousSibling
 
         if (scrollerPosition > -1) {
-            centeredCar.className = 'Car bordered'
-            previousCar.className = 'Car'
+            centeredCar.classList.add('bordered')
+            previousCar.classList.remove('bordered')
         }
-
     }, [containerRef, scrollerPosition])
 
     useEffect(() => {
