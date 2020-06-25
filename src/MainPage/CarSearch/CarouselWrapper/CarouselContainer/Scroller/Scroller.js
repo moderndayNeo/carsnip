@@ -12,7 +12,9 @@ import {
 
 export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
     const carWidth = 10.25 // 10.25rem
-    const [scrollerStyle, setScrollerStyle] = useState({})
+    const [scrollerStyle, setScrollerStyle] = useState({
+        left: `100px` //remove when done editing tooltip class
+    })
     const containerRef = useRef(null)
 
     useEffect(() => {
@@ -25,16 +27,16 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
         }
     }, [containerRef, scrollerPosition])
 
-    useEffect(() => {
-        setScrollerStyle({
-            left: `calc(((50% - 61.5rem) - ${
-                typedFirstPhrase ? scrollerPosition * carWidth : -20
-            }rem) - 6.125rem)`,
-            transition: `left ${
-                typedFirstPhrase ? '1s ease' : '10s linear'
-            } 0s`,
-        })
-    }, [scrollerPosition, typedFirstPhrase])
+    // useEffect(() => {
+    //     setScrollerStyle({
+    //         left: `calc(((50% - 61.5rem) - ${
+    //             typedFirstPhrase ? scrollerPosition * carWidth : -20
+    //         }rem) - 6.125rem)`,
+    //         transition: `left ${
+    //             typedFirstPhrase ? '1s ease' : '10s linear'
+    //         } 0s`,
+    //     })
+    // }, [scrollerPosition, typedFirstPhrase])
 
     return (
         <div className="Scroller" style={scrollerStyle} ref={containerRef}>

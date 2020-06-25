@@ -4,15 +4,15 @@ import './Car.css'
 export default function Car({ alt, src }) {
     const [centered, setCentered] = useState(true)
     
-    useEffect(() => {
-        setCentered(false)
-    }, [centered])
+    // useEffect(() => {
+    //     setCentered(false)
+    // }, [centered])
 
     return (
         <div className="Car">
             {centered && (
                 <div>
-                    <div className="Tooltip">Jaguar XK Convertible</div>
+                    <div className="Tooltip">{alt}</div>
                     <svg
                         viewBox="0 0 25.9 25.9"
                         x="0px"

@@ -14,7 +14,7 @@ export default function SearchBar({ onTypingEnd }) {
     }
     useEffect(() => {
         setTimeout(() => {
-            setLoading(false)
+            setLoading(true) // change to False when done editing tooltip
         }, 3000)
     }, [loading])
 
