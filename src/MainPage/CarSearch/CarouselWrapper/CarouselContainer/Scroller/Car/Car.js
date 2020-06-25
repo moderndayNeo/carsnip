@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './Car.css'
 import Highlight from './Highlight/Highlight'
 
-export default function Car({ alt, src, highlighted }) {
+export default function Car({ alt, src }) {
     return (
         <div className="Car">
-            {highlighted && <Highlight alt={alt} />}
+            <Highlight alt={alt} />
             <img alt={alt} src={src} />
         </div>
     )

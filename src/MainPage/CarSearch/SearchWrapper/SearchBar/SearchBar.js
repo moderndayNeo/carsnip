@@ -12,9 +12,10 @@ export default function SearchBar({ onTypingEnd }) {
     const updateSearch = (e) => {
         setSearch(e.target.value)
     }
+    
     useEffect(() => {
         setTimeout(() => {
-            setLoading(true) // change to False when done editing tooltip
+            setLoading(false) // change to False when done editing tooltip
         }, 3000)
     }, [loading])
 

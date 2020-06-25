@@ -17,6 +17,9 @@
 .Car.bordered {
     border: 1px solid green;
 }
+/*
+remove when finished applying tooltip class
+*/
 
 @media (min-width: 1024px) {
     .Car {

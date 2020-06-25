@@ -1,3 +1,11 @@
+.Highlight {
+    opacity: 0;
+}
+
+.Highlight.highlighted {
+    opacity: 1;
+}
+
 .Highlight .Tooltip {
     font-size: 0.875rem;
     white-space: nowrap;
