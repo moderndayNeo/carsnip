@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Scroller.css'
 import Car from './Car/Car'
 import {
@@ -10,28 +10,35 @@ import {
     bmwX4Img,
 } from '../../../../../Media/Images/scroller-car-images'
 
-const carWidth = 10.25 // 10.25rem
-
 export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
+    const carWidth = 10.25 // 10.25rem
     const [scrollerStyle, setScrollerStyle] = useState({})
-    
-    // useEffect(() => {
-        //     setScrollerStyle({
-            //         left: `calc(((50% - 61.5rem) - ${typedFirstPhrase ? scrollerPosition * carWidth : -20}rem) - 6.125rem)`,
-            //         transition: `left ${typedFirstPhrase ? '1s ease' : '10s linear'} 0s`
-            //     })
-            // }, [scrollerPosition, typedFirstPhrase])
-            
-    const myRef = React.createRef()
+    const containerRef = useRef()
 
-    // const highlighted = document.querySelector(`#root > div > div > section > div.CarSearch > div.CarouselWrapper > div > div.Scroller > div:nth-child(${scrollerPosition + 7})`)
-    // const previousCar = document.querySelector(`#root > div > div > section > div.CarSearch > div.CarouselWrapper > div > div.Scroller > div:nth-child(${scrollerPosition + 6})`)
-    // console.log(highlighted ? highlighted.style : null)
-    // if (highlighted) highlighted.style.border = '1px solid red';
-    // if (previousCar) previousCar.style.border = ''
+    useEffect(() => {
+        const centeredCar = containerRef.current?.children[scrollerPosition + 6]
+        const previousCar = centeredCar?.previousSibling
+
+        if (scrollerPosition > -1) {
+            centeredCar.className = 'Car bordered'
+            previousCar.className = 'Car'
+        }
+
+    }, [containerRef, scrollerPosition])
+
+    useEffect(() => {
+        setScrollerStyle({
+            left: `calc(((50% - 61.5rem) - ${
+                typedFirstPhrase ? scrollerPosition * carWidth : -20
+            }rem) - 6.125rem)`,
+            transition: `left ${
+                typedFirstPhrase ? '1s ease' : '10s linear'
+            } 0s`,
+        })
+    }, [scrollerPosition, typedFirstPhrase])
 
     return (
-        <div className="Scroller" style={scrollerStyle} ref={myRef} >
+        <div className="Scroller" style={scrollerStyle} ref={containerRef}>
             <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
             <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
             <Car alt="BMW X4" src={bmwX4Img} />
