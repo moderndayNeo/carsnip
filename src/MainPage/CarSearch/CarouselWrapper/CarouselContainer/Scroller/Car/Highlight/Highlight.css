@@ -24,9 +24,12 @@
     border-color: rgb(241, 241, 241);
     border-image: initial;
     border-radius: 1rem;
-    /* animation: 2s ease-out 0s 1 normal none running revealTooltip; */
 }
-/* 
+
+.Highlight.highlighted .Tooltip {
+    animation: 2s ease-out 0s 1 normal none running revealTooltip;
+}
+
 @keyframes revealTooltip {
     from {
         opacity: 0;
@@ -36,7 +39,7 @@
         opacity: 1;
         top: -4.625rem;
     }
-} */
+}
 
 .Highlight .Tooltip::after {
     content: ' ';
@@ -50,24 +53,14 @@
 }
 
 .Highlight .PulseDot {
-    /* display: block; */
     width: 1.6875rem;
     height: 1.6875rem;
     position: absolute;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    /* animation: 1s ease-out 1s 1 normal none running pulseDotAppear; */
-    /* opacity: 0;
-    transition: opacity 2s ease-out; */
     overflow: hidden;
 }
-
-
-
-/* .Highlight.highlighted .PulseDot {
-    opacity: 1;
-} */
 
 .Highlight .PulseDot circle {
     fill: rgb(255, 255, 255);
