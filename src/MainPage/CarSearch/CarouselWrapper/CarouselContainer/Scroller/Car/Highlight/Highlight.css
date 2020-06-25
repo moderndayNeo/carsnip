@@ -1,10 +1,10 @@
 .Highlight {
-    opacity: 0;
+    display: none;
 }
 
 .Highlight.highlighted {
-    opacity: 1;
-    transition: opacity 1s ease;
+    display: block;
+    transition: display 1s ease 1s;
 }
 
 .Highlight .Tooltip {
@@ -24,11 +24,22 @@
     border-color: rgb(241, 241, 241);
     border-image: initial;
     border-radius: 1rem;
-    animation: 2s ease-out 0s 1 normal none running jFRFBR;
+    animation: 2s ease-out 0s 1 normal none running revealTooltip;
+}
+
+@keyframes revealTooltip {
+    from {
+        opacity: 0;
+        top: -3.5rem;
+    }
+    to {
+        opacity: 1;
+        top: -4.625rem;
+    }
 }
 
 .Highlight .Tooltip::after {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 100%; /* At the bottom of the tooltip */
     left: 50%;
@@ -46,7 +57,7 @@
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    animation: 1s ease-out 0s 1 normal none running bicJul;
+    /* animation: 1s ease-out 0s 1 normal none running bicJul; */
     overflow: hidden;
 }
 
