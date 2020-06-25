@@ -1,6 +1,5 @@
 .Header {
     flex-shrink: 0;
-    /* height: 3.125rem; */
     height: 28px;
     position: fixed;
     top: 0px;

@@ -13,6 +13,5 @@ left: calc(((50% - 61.5rem) - 30.75rem) - 5.125rem);
 left: calc(((50% - 61.5rem) - 41rem) - 5.125rem);
 left: calc(((50% - 61.5rem) - 51.25rem) - 5.125rem);
 1 car = 10.25rem
-
 left: calc(((50% - 61.5rem) - (scrollerPosition * car width)) - 5.125rem);
 */

@@ -4,7 +4,6 @@
     position: relative;
     flex: 0 0 9rem;
     margin: 0px 0.625rem;
-    transition: opacity 500ms ease 0s;
 }
 
 .Car img {
@@ -12,6 +11,7 @@
     width: 100%;
     height: 100%;
     opacity: 1;
+    transition: opacity 500ms ease 0s;
 }
 
 .Car.transparent img {

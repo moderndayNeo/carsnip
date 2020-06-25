@@ -4,9 +4,7 @@ import './ImportantInfo.css'
 export default function ImportantInfo() {
     return (
         <div className="ImportantInfo">
-            <p className="InfoHeader">
-                Important Information
-            </p>
+            <p className="InfoHeader">Important Information</p>
             <p className="Text">
                 Carsnip Ltd is authorised and regulated by the Financial Conduct
                 Authority (FRN 711949). As a broker, Carsnip does not contract
@@ -19,7 +17,7 @@ export default function ImportantInfo() {
                 Cardiff, CF10 5BT. Finance is subject to status and available to
                 UK residents ages over 18 only. Terms and conditions apply. In
                 order to be eligible to apply for finance you will need to have
-                a gross monthly income in excess of £1,000. Visit{/* */}{' '}
+                a gross monthly income in excess of £1,000. Visit{' '}
                 <a
                     href="https://oodlecarfinance.com/"
                     rel="noreferrer noopener"
@@ -28,7 +26,7 @@ export default function ImportantInfo() {
                 >
                     https://oodlecarfinance.com/
                 </a>{' '}
-                {/* */}for full details.
+                for full details.
             </p>
             <p className="Text">
                 Please note, if you click on a vehicle picture, you may be

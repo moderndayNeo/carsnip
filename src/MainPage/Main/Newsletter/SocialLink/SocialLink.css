@@ -49,8 +49,8 @@
     .SocialLink {
         background-color: transparent;
         display: block;
-        /* margin-right: 10px; */
     }
+    
     .SocialLink svg {
         width: 3.25rem;
         height: 1.75rem;

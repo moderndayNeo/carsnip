@@ -1,11 +1,9 @@
 .CarouselContainer {
     margin-top: 10.625rem;
-    /* position: relative; */
     height: 5.3125rem;
     border-bottom: 0.0625rem solid rgb(228, 228, 228);
     padding-bottom: 15px;
     overflow: hidden;
-    /* max-width: 100%; */
 }
 
 @media (min-width: 1024px) {

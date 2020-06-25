@@ -24,10 +24,9 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
 
         if (scrollerPosition === 0) {
             lastCar.children[0].classList.remove('highlighted')
-            lastCar.classList.remove('transparent')
+            lastCar.classList.add('transparent')
         }
     }, [containerRef, scrollerPosition])
-
 
     useEffect(() => {
         setScrollerStyle({
@@ -39,7 +38,6 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
             } 0s`,
         })
     }, [scrollerPosition, typedFirstPhrase])
-
 
     let allCars = []
     let sixCars = []
