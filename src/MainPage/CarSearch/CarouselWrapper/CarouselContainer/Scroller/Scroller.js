@@ -4,10 +4,9 @@ import Car from './Car/Car'
 import { carList } from './carList'
 
 export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
-    const carWidth = 10.25 // 10.25rem
-    const [scrollerStyle, setScrollerStyle] = useState({
-        left: `100px`, //remove when done editing tooltip class
-    })
+    const largeScreen = window.innerWidth >= 1024
+    const carWidth = largeScreen ? 19.9375 : 10.25 // rem
+    const [scrollerStyle, setScrollerStyle] = useState({})
     const containerRef = useRef(null)
 
     useEffect(() => {
@@ -30,14 +29,14 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
 
     useEffect(() => {
         setScrollerStyle({
-            left: `calc(((50% - 61.5rem) - ${
+            left: `calc(((50% -  ${largeScreen ? 119.625 : 61.5}rem) - ${
                 typedFirstPhrase ? scrollerPosition * carWidth : -20
-            }rem) - 6.125rem)`,
+            }rem) - ${largeScreen ? 9.96875 : 6.125}rem)`,
             transition: `left ${
                 typedFirstPhrase ? '1s ease' : '10s linear'
             } 0s`,
         })
-    }, [scrollerPosition, typedFirstPhrase])
+    }, [scrollerPosition, typedFirstPhrase, carWidth, largeScreen])
 
     let allCars = []
     let sixCars = []
