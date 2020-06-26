@@ -22,8 +22,3 @@ function App() {
 }
 
 export default App
-
-/*
-Mobile - apply a gap between manufacturer cards
-
-*/
