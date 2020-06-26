@@ -12,7 +12,7 @@ export default function SearchBar({ onTypingEnd }) {
     const updateSearch = (e) => {
         setSearch(e.target.value)
     }
-    
+
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
@@ -33,12 +33,12 @@ export default function SearchBar({ onTypingEnd }) {
                         'Hatchback 5 Door Diesel',
                     ]}
                     cursor={false}
-                    // pause={5000}
-                    pause={1000}
+                    pause={5000}
+                    // pause={1000}
                     emptyPause={1000}
                     className={`ReactRotatingText ${search && 'invisible'}`}
-                    // typingInterval={140}
-                    typingInterval={10}
+                    typingInterval={140}
+                    // typingInterval={10}
                     deletingInterval={50}
                     onClick={focusOnSearchBox}
                     onTypingEnd={onTypingEnd}
