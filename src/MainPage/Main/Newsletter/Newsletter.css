@@ -33,6 +33,7 @@
         -webkit-box-align: center;
         align-items: center;
     }
+
     .Newsletter .Social {
         display: flex;
         -webkit-box-pack: justify;
@@ -42,5 +43,11 @@
         max-width: 11rem;
         margin-top: 1.5rem;
         margin-right: 0px;
+    }
+}
+
+@media (min-width: 800px) {
+    .Newsletter {
+        padding: 1.25rem 0px 1.5625rem;
     }
 }
