@@ -39,7 +39,7 @@ export default function Nav({
                 <li className="Item">
                     <a href={href4} title={title4}>
                         {text4}
-                        {text5 && <span className="Highlight">{text5}</span>}
+                        {text5 && <span className="free-sticker">{text5}</span>}
                     </a>
                 </li>
             </ul>

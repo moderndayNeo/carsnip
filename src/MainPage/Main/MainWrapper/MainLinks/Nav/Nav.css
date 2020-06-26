@@ -59,7 +59,7 @@
     color: rgb(229, 229, 229);
 }
 
-.Nav .List .Item a span {
+.Nav .List .Item a .free-sticker {
     text-size-adjust: 100%;
     font-family: 'Roboto', helvetica, arial, sans-serif;
     list-style-type: none;

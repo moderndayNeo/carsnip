@@ -33,7 +33,7 @@ export default function SearchBar({ onTypingEnd }) {
                         'Hatchback 5 Door Diesel',
                     ]}
                     cursor={false}
-                    pause={4000}
+                    pause={5000}
                     // pause={1000}
                     emptyPause={1000}
                     className={`ReactRotatingText ${search && 'invisible'}`}

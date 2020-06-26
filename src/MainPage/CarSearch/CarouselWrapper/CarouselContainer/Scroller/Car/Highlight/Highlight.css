@@ -73,3 +73,11 @@
 .Highlight .PulseDot .PulseDot-Path {
     fill: rgb(255, 96, 0);
 }
+
+@media (min-width: 1024px) {
+    .Highlight .Tooltip {
+        font-size: 1.125rem;
+        top: -7.1875rem;
+        padding: 1.8125rem 2.375rem;
+    }
+}

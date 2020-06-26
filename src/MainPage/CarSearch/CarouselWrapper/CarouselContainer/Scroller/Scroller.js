@@ -30,7 +30,7 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
     useEffect(() => {
         setScrollerStyle({
             left: `calc(((50% -  ${largeScreen ? 119.625 : 61.5}rem) - ${
-                typedFirstPhrase ? scrollerPosition * carWidth : -20
+                typedFirstPhrase ? scrollerPosition * carWidth : -40
             }rem) - ${largeScreen ? 9.96875 : 6.125}rem)`,
             transition: `left ${
                 typedFirstPhrase ? '1s ease' : '10s linear'
@@ -61,26 +61,3 @@ export default function Scroller({ scrollerPosition, typedFirstPhrase }) {
         </div>
     )
 }
-
-/*
-         <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
-            <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
-            <Car alt="BMW X4" src={bmwX4Img} />
-            <Car alt="Renault Clio" src={renaultClioImg} />
-            <Car alt="Ford Fiesta" src={fordFiestaImg} />
-            <Car alt="Volkswagen Golf" src={vwGolfImg} />
-
-            <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
-            <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
-            <Car alt="BMW X4" src={bmwX4Img} />
-            <Car alt="Renault Clio" src={renaultClioImg} />
-            <Car alt="Ford Fiesta" src={fordFiestaImg} />
-            <Car alt="Volkswagen Golf" src={vwGolfImg} />
-
-            <Car alt="Land Rover Discovery" src={landRoverDiscoveryImg} />
-            <Car alt="Jaguar XK Convertible" src={jaguarXkConvertibleImg} />
-            <Car alt="BMW X4" src={bmwX4Img} />
-            <Car alt="Renault Clio" src={renaultClioImg} />
-            <Car alt="Ford Fiesta" src={fordFiestaImg} />
-            <Car alt="Volkswagen Golf" src={vwGolfImg} />
-*/
