@@ -2,16 +2,10 @@ import React from 'react'
 import './CarouselWrapper.css'
 import CarouselContainer from './CarouselContainer/CarouselContainer'
 
-export default function CarouselWrapper({
-    scrollerPosition,
-    typedFirstPhrase,
-}) {
+export default function CarouselWrapper() {
     return (
         <div className="CarouselWrapper">
-            <CarouselContainer
-                scrollerPosition={scrollerPosition}
-                typedFirstPhrase={typedFirstPhrase}
-            />
+            <CarouselContainer />
         </div>
     )
 }
