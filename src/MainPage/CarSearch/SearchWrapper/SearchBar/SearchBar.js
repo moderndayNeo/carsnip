@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import './SearchBar.css'
 import SpeechButton from './SpeechButton/SpeechButton'
 import SearchBox from './SearchBox/SearchBox'
 import SearchButton from './SearchButton/SearchButton'
 import ReactRotatingText from 'react-rotating-text'
 import { focusOnSearchBox } from '../../../../carsnipFunctions'
+import { CarouselContext } from '../../CarSearch';
 
-export default function SearchBar({ onTypingEnd }) {
+export default function SearchBar() {
+    const carouselContext = useContext(CarouselContext)
+    const handleTypingFinished = carouselContext.handleTypingFinished
     const [search, setSearch] = useState('')
     const [loading, setLoading] = useState(true)
     const updateSearch = (e) => {
@@ -41,7 +44,7 @@ export default function SearchBar({ onTypingEnd }) {
                     // typingInterval={10}
                     deletingInterval={50}
                     onClick={focusOnSearchBox}
-                    onTypingEnd={onTypingEnd}
+                    onTypingEnd={handleTypingFinished}
                 />
             )}
             <SearchBox onChange={(e) => updateSearch(e)} search={search} />

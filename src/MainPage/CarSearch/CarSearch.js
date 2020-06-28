@@ -20,10 +20,10 @@ export default function CarSearch() {
     return (
         <div className="CarSearch">
             <CarouselContext.Provider
-                value={{ scrollerPosition, typedFirstPhrase }}
+                value={{ scrollerPosition, typedFirstPhrase, handleTypingFinished }}
             >
                 <CarsnipLogo />
-                <SearchWrapper onTypingEnd={handleTypingFinished} />
+                <SearchWrapper />
                 <CarouselWrapper />
             </CarouselContext.Provider>
         </div>
