@@ -17,6 +17,7 @@ Live clone: https://carsnip.adamjz.vercel.app
 
 # Desktop View
 ![carsnip-desktop-fullpage](https://user-images.githubusercontent.com/57966028/86012413-d5119400-ba15-11ea-9805-f1d7757a20b6.gif)
+![carsnip-desktop-resizing](https://user-images.githubusercontent.com/57966028/86018427-40129900-ba1d-11ea-8d03-6fe63e592b9b.gif)
 
 
 # Table Of Contents
