@@ -1,12 +1,13 @@
-<img src="./src/common/images/shield.svg">
+<img src="/src/Media/Images/shield.svg">
 
 ## Outline
 
-A clone of the homepage of car search engine Carsnip.com. A solo project built in ReactJS.
+A homepage clone of car search engine Carsnip.com. A solo project built in ReactJS.
 
 ## Live Demo
 
 The original site: https://www.carsnip.com
+
 Live clone: https://carsnip.adamjz.vercel.app
 
 # Mobile View
@@ -17,9 +18,11 @@ Live clone: https://carsnip.adamjz.vercel.app
 
 -   [Technologies](#technologies)
 -   [The Code](#some-snippets-from-the-code)
--   [Authors](#authors)
+-   [Features](#features)
 
-Features:
+
+
+## Features
 
 -   Context API
 -   CSS Variables, animations, and transitions
