@@ -21,7 +21,6 @@ Live clone: https://carsnip.adamjz.vercel.app
 -   [Features](#features)
 
 
-
 ## Features
 
 -   Context API
