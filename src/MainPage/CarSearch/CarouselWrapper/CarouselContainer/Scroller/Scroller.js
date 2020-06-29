@@ -34,7 +34,7 @@ export default function Scroller() {
     useEffect(() => {
         setScrollerStyle({
             left: `calc(((50% -  ${largeScreen ? 119.625 : 61.5}rem) - ${
-                typedFirstPhrase ? scrollerPosition * carWidth : -40
+                typedFirstPhrase ? scrollerPosition * carWidth : 0
             }rem) - ${largeScreen ? 9.96875 : 6.125}rem)`,
             transition: `left ${
                 typedFirstPhrase ? '1s ease' : '10s linear'

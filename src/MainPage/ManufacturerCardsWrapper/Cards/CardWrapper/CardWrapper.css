@@ -88,6 +88,7 @@
 
 @media (min-width: 888px) {
     .CardWrapper {
+        margin: 3px auto;
     }
     .CardWrapper img {
     }
