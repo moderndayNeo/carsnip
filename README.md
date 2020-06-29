@@ -12,7 +12,12 @@ Live clone: https://carsnip.adamjz.vercel.app
 
 # Mobile View
 
+![carsnip-mobile-fullpage](https://user-images.githubusercontent.com/57966028/86012423-d8a51b00-ba15-11ea-8494-d50b35490e44.gif)
+![carsnip-mobile-scroller](https://user-images.githubusercontent.com/57966028/86012426-da6ede80-ba15-11ea-8785-bb64a581da61.gif)
+
 # Desktop View
+![carsnip-desktop-fullpage](https://user-images.githubusercontent.com/57966028/86012413-d5119400-ba15-11ea-9805-f1d7757a20b6.gif)
+
 
 # Table Of Contents
 
