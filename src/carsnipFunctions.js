@@ -7,3 +7,4 @@ const focusOnSearchBox = () => {
 }
 
 export { focusOnSearchBox }
+

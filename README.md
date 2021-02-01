@@ -2,29 +2,26 @@
 
 ## Outline
 
-A homepage clone of car search engine Carsnip.com. A solo project built in ReactJS.
+A homepage reproduction of car search engine Carsnip.com. A solo project built in React.js employing the most up-to-date CSS3 features.
 
 ## Live Demo
 
 The original site: https://www.carsnip.com
 
-Live clone: https://carsnip.adamjz.vercel.app
+Live reproduction: https://carsnip.adamjz.vercel.app
 
 # Mobile View
 
 ![carsnip-mobile-fullpage](https://user-images.githubusercontent.com/57966028/86012423-d8a51b00-ba15-11ea-8494-d50b35490e44.gif)
-![carsnip-mobile-scroller](https://user-images.githubusercontent.com/57966028/86012426-da6ede80-ba15-11ea-8785-bb64a581da61.gif)
 
 # Desktop View
-![carsnip-desktop-fullpage](https://user-images.githubusercontent.com/57966028/86012413-d5119400-ba15-11ea-9805-f1d7757a20b6.gif)
 ![carsnip-desktop-resizing](https://user-images.githubusercontent.com/57966028/86018427-40129900-ba1d-11ea-8d03-6fe63e592b9b.gif)
-
 
 # Table Of Contents
 
+-   [Features](#features)
 -   [Technologies](#technologies)
 -   [The Code](#some-snippets-from-the-code)
--   [Features](#features)
 
 
 ## Features
@@ -36,15 +33,15 @@ Live clone: https://carsnip.adamjz.vercel.app
 
 ## Technologies
 
--   HTML
--   CSS
+-   HTML5
+-   CSS3
 -   JavaScript
--   ReactJS
--   NodeJS
+-   React.js
+-   Node.js
 
 ## Some Snippets From The Code
 
-### React Context API where prop drilling exceeds five layers
+### Employ React Context API where prop drilling exceeds five layers
 
 ```js
 <CarouselContext.Provider
@@ -62,9 +59,9 @@ Live clone: https://carsnip.adamjz.vercel.app
 
 ### Clean CSS
 
-Each sub-component has it's own CSS file. Use of CSS Variables results in scalability
+Provide each sub-component it's own CSS file. Implement CSS Variables resulting in maintainable styling
 
-Media queries combine with CSS Variables for maintainable styling
+Combine media queries with CSS Variables
 
 ```css
 .Highlight .Tooltip::after {
@@ -96,7 +93,7 @@ Media queries combine with CSS Variables for maintainable styling
 }
 ```
 
-Transitions and animations create a UI true to the original
+Employ transitions and animations to create a UI true to the original
 
 ```css
 .Highlight.highlighted .Tooltip {
@@ -141,7 +138,7 @@ export const carList = [
 
 ### Componentization
 
-Componentization + Hooks allows for easily maintainable code
+Use componentization and React Hooks, resulting in a modular codebase
 
 ```js
 export default function MainPage({ onClick, popupMenuVisible }) {
