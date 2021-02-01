@@ -14,7 +14,7 @@ Live reproduction: https://carsnip.adamjz.vercel.app
 
 ![carsnip-mobile-fullpage](https://user-images.githubusercontent.com/57966028/86012423-d8a51b00-ba15-11ea-8494-d50b35490e44.gif)
 
-# Desktop View
+# Re-sizes for all devices
 ![carsnip-desktop-resizing](https://user-images.githubusercontent.com/57966028/86018427-40129900-ba1d-11ea-8d03-6fe63e592b9b.gif)
 
 # Table Of Contents
